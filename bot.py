@@ -11,6 +11,9 @@ load_dotenv()
 import time
 from discord.ext import tasks
 
+
+
+
 BOOST_PRICES = {1:10000, 2:20000}
 last_message_author = {}
 DAILY_BASE = 500
@@ -3060,7 +3063,7 @@ from discord.ui import View, Button
 import discord
 
 # ID du rôle @evenements
-EVENEMENT_ROLE_ID = 1515285545088188507  # ← remplace par le vrai ID
+EVENEMENT_ROLE_ID = 1497882093500371109
 
 
 @bot.tree.command(name="drop", description="Lance un drop (admin uniquement)")
@@ -3538,7 +3541,7 @@ async def quetes(interaction: discord.Interaction):
 
 #########################################
 
-ID_SALON_GUERRE = 1514521152720998522
+ID_SALON_GUERRE = 1498036546928902185
 
 RARETE_POINTS = {
     "commun": 1,
@@ -3548,6 +3551,26 @@ RARETE_POINTS = {
     "divin": 5,
     "unique": 6
 }
+
+def dragons_deja_engages(data, user_id):
+    combats = data.get("combats", {})
+    engages = set()
+
+    for cid, combat in combats.items():
+        if combat["résolu"]:
+            continue
+
+        # Dragons utilisés par l'utilisateur en attaque
+        if combat["attaquant"] == user_id:
+            for d in combat["dragons_attaquant"]:
+                engages.add(d)
+
+        # Dragons utilisés par l'utilisateur en défense
+        if combat["cible"] == user_id:
+            for d in combat["dragons_cible"]:
+                engages.add(d)
+
+    return engages
 
 
 def parse_dragon_entry(entry):
@@ -3602,14 +3625,25 @@ async def combat_attaquer(interaction: discord.Interaction, membre: discord.Memb
 
     data = load_data()
     user_data = get_user_data(data, interaction.user.id)
+    # Empêche d'attaquer un joueur à 0 tokens
+    cible_data = get_user_data(data, membre.id)
+    if cible_data["tokens"] <= 0:
+        return await interaction.response.send_message(
+            "❌ Ce joueur n'a plus de tokens, tu ne peux pas l'attaquer.",
+            ephemeral=True
+            )
 
     # Dragons stade >= 4
+    engages = dragons_deja_engages(data, interaction.user.id)
+
     options = []
     for nom, stades in user_data["dragons"].items():
         for stade in stades:
             if stade >= 4:
                 entry = f"{nom} | {stade}"
-                options.append(discord.SelectOption(label=entry, value=entry))
+                if entry not in engages:  # 🔥 dragon déjà utilisé → interdit
+                    options.append(discord.SelectOption(label=entry, value=entry))
+
 
     if not options:
         return await interaction.response.send_message(
@@ -3684,6 +3718,11 @@ async def combat_defendre(interaction: discord.Interaction, guerre_id: str):
         return await interaction.response.send_message("❌ Cette guerre n'existe pas.", ephemeral=True)
 
     combat = combats[guerre_id]
+    if combat["dragons_cible"]:
+        return await interaction.response.send_message(
+            "❌ Tu as déjà défendu cette guerre.",
+            ephemeral=True
+            )
 
     if combat["cible"] != interaction.user.id:
         return await interaction.response.send_message("❌ Tu n'es pas la cible de cette guerre.", ephemeral=True)
@@ -3693,12 +3732,16 @@ async def combat_defendre(interaction: discord.Interaction, guerre_id: str):
 
     user_data = get_user_data(data, interaction.user.id)
 
+    engages = dragons_deja_engages(data, interaction.user.id)
+
     options = []
     for nom, stades in user_data["dragons"].items():
         for stade in stades:
             if stade >= 4:
                 entry = f"{nom} | {stade}"
-                options.append(discord.SelectOption(label=entry, value=entry))
+                if entry not in engages:  # 🔥 dragon déjà utilisé → interdit
+                    options.append(discord.SelectOption(label=entry, value=entry))
+
 
     if not options:
         return await interaction.response.send_message(
@@ -3755,8 +3798,10 @@ class ChoixDragonsDefenseSelect(discord.ui.Select):
             perdant = combat["attaquant"]
             gain_tokens = points_cible // 4
 
-        data[str(perdant)]["tokens"] -= gain_tokens
+        # Empêche les tokens négatifs
+        data[str(perdant)]["tokens"] = max(0, data[str(perdant)]["tokens"] - gain_tokens)
         data[str(gagnant)]["tokens"] += gain_tokens
+
 
         combat["résolu"] = True
 
@@ -3775,18 +3820,22 @@ async def combat_voir(interaction: discord.Interaction):
     data = load_data()
     combats = data.get("combats", {})
 
-    if not combats:
+    # Filtrer uniquement les guerres non résolues
+    combats_en_cours = {
+        cid: combat for cid, combat in combats.items()
+        if not combat["résolu"]
+    }
+
+    if not combats_en_cours:
         return await interaction.response.send_message("Aucune guerre en cours.", ephemeral=True)
 
     pages = []
-    for cid, combat in combats.items():
+    for cid, combat in combats_en_cours.items():
         embed = discord.Embed(
             title=f"Guerre #{cid}",
             description=(
                 f"Attaquant : <@{combat['attaquant']}>\n"
                 f"Cible : <@{combat['cible']}>\n"
-                f"Dragons attaquant : **???**\n"
-                f"Dragons défense : **???**\n"
                 f"Résolu : {'Oui' if combat['résolu'] else 'Non'}"
             ),
             color=discord.Color.red()
@@ -3795,6 +3844,7 @@ async def combat_voir(interaction: discord.Interaction):
 
     view = PaginationView(pages, interaction.user)
     await interaction.response.send_message(embed=pages[0], view=view)
+
 
 
 @tasks.loop(minutes=10)
@@ -3818,8 +3868,9 @@ async def check_combats():
             perdant = combat["cible"]
             gagnant = combat["attaquant"]
 
-            data[str(perdant)]["tokens"] -= gain
-            data[str(gagnant)]["tokens"] += gain
+            # Empêche les tokens négatifs
+            data[str(perdant)]["tokens"] = max(0, data[str(perdant)]["tokens"] - gain_tokens)
+            data[str(gagnant)]["tokens"] += gain_tokens
 
             combat["résolu"] = True
 
