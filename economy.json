@@ -1,0 +1,162 @@
+{
+    "1119591730577162261": {
+        "money": 70015,
+        "boost": 3,
+        "job_level": 6,
+        "last_daily": "",
+        "inventory": [
+            "<:oeuf_de_dragon_rare:1516065280416284782> \u0152uf de dragon rare",
+            "<:oeuf_de_dragon_epique:1516064792400629802> \u0152uf de dragon \u00e9pique",
+            "<:oeuf_de_dragon:1515707239737065563> \u0152uf de dragon",
+            "\ud83d\udc10 Ch\u00e8vre"
+        ],
+        "farm": true,
+        "fishing_rod": 3,
+        "last_fish": 1782399916,
+        "fish_inventory": [
+            "\ud83d\udc1f Sardine"
+        ],
+        "dragons": {
+            "Dragon \u00e9lectrique": [
+                1
+            ],
+            "Dragon de pierre": [
+                6
+            ]
+        },
+        "tokens": 2,
+        "progress_quests": {
+            "boost3": true,
+            "forgeron4": true,
+            "ferme": true,
+            "fish10000": false,
+            "canne_max": true
+        }
+    },
+    "1214957600412803107": {
+        "money": 1135,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "2026-06-25",
+        "inventory": [
+            "\ud83d\udc10 Ch\u00e8vre"
+        ],
+        "farm": true,
+        "fishing_rod": 1,
+        "last_fish": 1782717576,
+        "fish_inventory": [
+            "\ud83d\udc1f Sardine"
+        ],
+        "dragons": {
+            "Dragon de sang": [
+                1
+            ]
+        },
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": true,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1479480336944468061": {
+        "money": 0,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 1782400086,
+        "fish_inventory": [
+            "\ud83d\udc1f Sardine"
+        ],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "combats": {
+        "1": {
+            "attaquant": 1119591730577162261,
+            "cible": 1191742658016718909,
+            "dragons_attaquant": [
+                "Dragon de pierre | 6"
+            ],
+            "dragons_cible": [
+                "Dragon ancestral | 6"
+            ],
+            "timestamp": 1782717491,
+            "r\u00e9solu": true
+        },
+        "2": {
+            "attaquant": 1119591730577162261,
+            "cible": 1191742658016718909,
+            "dragons_attaquant": [
+                "Dragon de pierre | 6"
+            ],
+            "dragons_cible": [
+                "Dragon de poison | 4"
+            ],
+            "timestamp": 1782718210,
+            "r\u00e9solu": true
+        }
+    },
+    "1191742658016718909": {
+        "money": 15000,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [
+            "\ud83d\udc10 Ch\u00e8vre",
+            "\ud83d\udc10 Ch\u00e8vre"
+        ],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {
+            "Dragon ancestral": [
+                6
+            ],
+            "Dragon de poison": [
+                4
+            ]
+        },
+        "tokens": 1,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1159164756234621019": {
+        "money": 15,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    }
+}
