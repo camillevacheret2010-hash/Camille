@@ -1009,15 +1009,34 @@ async def on_message(message):
 # truc de copilot pour le fichier de bank ou economy
 
 def load_data():
-    if not os.path.exists("economy.json"):
-        with open("economy.json", "w") as f:
-            json.dump({}, f)
-    with open("economy.json", "r") as f:
-        return json.load(f)
+    try:
+        with open("economy.json", "r", encoding="utf-8") as f:
+            content = f.read().strip()
+
+            # 🔥 Si le fichier est vide → on recrée une base propre
+            if not content:
+                print("⚠️ Fichier JSON vide, recréation...")
+                return {}
+
+            return json.loads(content)
+
+    except json.JSONDecodeError:
+        print("⚠️ JSON corrompu, recréation...")
+        return {}
+
+    except FileNotFoundError:
+        print("⚠️ Fichier JSON introuvable, création...")
+        return {}
+
 
 def save_data(data):
-    with open("economy.json", "w") as f:
-        json.dump(data, f, indent=4)
+    tmp_file = "economy_tmp.json"
+
+    with open(tmp_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+
+    os.replace(tmp_file, "economy.json")
+
 
 def get_user_data(data, user_id):
     user_id = str(user_id)
