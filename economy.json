@@ -1,748 +1,370 @@
 {
     "1119591730577162261": {
-        "money": 15450,
+        "money": 2155,
         "boost": 3,
-        "job_level": 2,
-        "last_daily": "2026-07-03",
+        "job_level": 6,
+        "last_daily": "2026-07-23",
         "inventory": [],
-        "farm": false,
-        "fishing_rod": 1,
-        "last_fish": 1783106799,
+        "farm": true,
+        "fishing_rod": 3,
+        "last_fish": 1784829374,
         "fish_inventory": [],
         "dragons": {
-            "Dragon de pierre": [
-                4
-            ],
             "Dragon de poison": [
-                5
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon de sable": [
-                5
-            ],
-            "Dragon du soleil": [
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
-            ],
-            "Dragon de feu": [
-                1
-            ],
-            "Dragon raté": [
-                1
-            ],
-            "Dragon détruit": [
-                5
             ],
             "Dragon chromatique": [
                 4
             ],
+            "Dragon de feu": [
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de sang": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon du soleil": [
+                1,
+                1,
+                1
+            ],
+            "Dragon éclipse": [
+                1
+            ],
+            "Dragon d'orage": [
+                1
+            ],
+            "Dragon de glace": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon électrique": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de lumière": [
+                3,
+                1,
+                1
+            ],
+            "Dragon de poussière": [
+                1
+            ],
+            "Dragon radioactif": [
+                1
+            ],
+            "Dragon miroir": [
+                1
+            ],
+            "Dragon possédé": [
+                1
+            ],
+            "Dragon de pierre": [
+                1,
+                1
+            ],
+            "Dragon d'obsidienne": [
+                1
+            ],
+            "Dragon d'argile": [
+                1
+            ],
+            "Dragon des ombres": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon compacté": [
+                1
+            ],
+            "Dragon des cavernes": [
+                1
+            ],
+            "Dragon détruit": [
+                6
+            ],
+            "Dragon des vagues": [
+                1
+            ],
+            "Dragon de la mer": [
+                1
+            ],
+            "Dragon de la lune": [
+                1
+            ],
+            "Dragon de la nuit": [
+                1
+            ],
             "Dragon corrompu": [
-                4
+                1,
+                1,
+                1
+            ],
+            "Dragon des cieux": [
+                1,
+                1
+            ],
+            "Dragon mécanique": [
+                1
+            ],
+            "Dragon d'eau": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de métal": [
+                1
+            ],
+            "Dragon de rouille": [
+                1
+            ],
+            "Dragon champignon": [
+                1
+            ],
+            "Dragon de vent": [
+                1,
+                1,
+                1
+            ],
+            "Dragon pissenlit": [
+                1
+            ],
+            "Dragon raté": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon des abysses": [
+                1
+            ],
+            "Dragon d'améthyste": [
+                1
+            ],
+            "Grand Dragon Doré": [
+                1
+            ],
+            "Dragon de cristal": [
+                1
+            ],
+            "Dragon de lave": [
+                1
+            ],
+            "Dragon de diamant": [
+                1
+            ],
+            "Dragon ancestral": [
+                1
+            ],
+            "Dragon de plante": [
+                1
+            ],
+            "Dragon de fleur": [
+                1
+            ],
+            "Dragon musical": [
+                1
+            ],
+            "Dragon du printemps": [
+                1
+            ],
+            "Dragon de l'automne": [
+                1
+            ],
+            "Dragon de l'été": [
+                1
+            ],
+            "Dragon de l'hiver": [
+                1
+            ],
+            "Dragon du temps": [
+                1
+            ],
+            "Dragon spectral": [
+                3
+            ],
+            "Dragon de terreur": [
+                3
             ]
         },
-        "tokens": 12,
+        "tokens": 3,
         "progress_quests": {
             "boost3": true,
-            "forgeron4": false,
-            "ferme": false,
+            "forgeron4": true,
+            "ferme": true,
             "fish10000": false,
-            "canne_max": false
-        }
-    },
-    "combats": {
-        "1": {
-            "attaquant": 1214957600412803107,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de pierre | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de vent | 5"
-            ],
-            "timestamp": 1782740759,
-            "résolu": true
-        },
-        "2": {
-            "attaquant": 1214957600412803107,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de pierre | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782760687,
-            "résolu": true
-        },
-        "3": {
-            "attaquant": 1214957600412803107,
-            "cible": 1119591730577162261,
-            "dragons_attaquant": [
-                "Dragon de l'été | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 4"
-            ],
-            "timestamp": 1782826602,
-            "résolu": true
-        },
-        "4": {
-            "attaquant": 1214957600412803107,
-            "cible": 1479480336944468061,
-            "dragons_attaquant": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de poison | 5",
-                "Dragon de sable | 5"
-            ],
-            "timestamp": 1782836564,
-            "résolu": true
-        },
-        "5": {
-            "attaquant": 1119591730577162261,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon de pierre | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6"
-            ],
-            "timestamp": 1782836703,
-            "résolu": true
-        },
-        "6": {
-            "attaquant": 1191742658016718909,
-            "cible": 1119591730577162261,
-            "dragons_attaquant": [
-                "Grand Dragon Doré | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de sable | 5",
-                "Dragon de poison | 5"
-            ],
-            "timestamp": 1782838525,
-            "résolu": true
-        },
-        "7": {
-            "attaquant": 1191742658016718909,
-            "cible": 1479480336944468061,
-            "dragons_attaquant": [
-                "Dragon de vent | 6",
-                "Grand Dragon Doré | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de poison | 5",
-                "Dragon de sable | 5"
-            ],
-            "timestamp": 1782844617,
-            "résolu": true
-        },
-        "8": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 4"
-            ],
-            "dragons_cible": [
-                "Grand Dragon Doré | 6"
-            ],
-            "timestamp": 1782892072,
-            "résolu": true
-        },
-        "9": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de vent | 6",
-                "Grand Dragon Doré | 6"
-            ],
-            "timestamp": 1782892254,
-            "résolu": true
-        },
-        "10": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de lumière | 5",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782892315,
-            "résolu": true
-        },
-        "11": {
-            "attaquant": 1479480336944468061,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de sang | 6",
-                "Grand Dragon Doré | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de vent | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de lumière | 6",
-                "Dragon des ombres | 6"
-            ],
-            "timestamp": 1782892508,
-            "résolu": true
-        },
-        "12": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de lumière | 5",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782892579,
-            "résolu": true
-        },
-        "13": {
-            "attaquant": 1168481636573257728,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6",
-                "Dragon chromatique | 6",
-                "Dragon des cieux | 6"
-            ],
-            "timestamp": 1782893522,
-            "résolu": true
-        },
-        "14": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782893825,
-            "résolu": true
-        },
-        "15": {
-            "attaquant": 1168481636573257728,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6",
-                "Dragon chromatique | 6",
-                "Dragon des cieux | 6"
-            ],
-            "timestamp": 1782896556,
-            "résolu": true
-        },
-        "16": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782896631,
-            "résolu": true
-        },
-        "17": {
-            "attaquant": 1214957600412803107,
-            "cible": 1453643861883752523,
-            "dragons_attaquant": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6",
-                "Dragon chromatique | 6",
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Grand Dragon Doré | 4"
-            ],
-            "timestamp": 1782899991,
-            "résolu": true
-        },
-        "18": {
-            "attaquant": 1168481636573257728,
-            "cible": 1453643861883752523,
-            "dragons_attaquant": [
-                "Dragon des cieux | 4"
-            ],
-            "dragons_cible": [
-                "Grand Dragon Doré | 4"
-            ],
-            "timestamp": 1782900001,
-            "résolu": true
-        },
-        "19": {
-            "attaquant": 1191742658016718909,
-            "cible": 1453643861883752523,
-            "dragons_attaquant": [
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "dragons_cible": [
-                "Grand Dragon Doré | 4"
-            ],
-            "timestamp": 1782900052,
-            "résolu": true
-        },
-        "20": {
-            "attaquant": 1168481636573257728,
-            "cible": 1453643861883752523,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Grand Dragon Doré | 4"
-            ],
-            "timestamp": 1782900219,
-            "résolu": true
-        },
-        "21": {
-            "attaquant": 1168481636573257728,
-            "cible": 1453643861883752523,
-            "dragons_attaquant": [
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Grand Dragon Doré | 4"
-            ],
-            "timestamp": 1782901554,
-            "résolu": true
-        },
-        "22": {
-            "attaquant": 1214957600412803107,
-            "cible": 1168481636573257728,
-            "dragons_attaquant": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6",
-                "Dragon chromatique | 6",
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Dragon des cieux | 6"
-            ],
-            "timestamp": 1782901682,
-            "résolu": true
-        },
-        "23": {
-            "attaquant": 1191742658016718909,
-            "cible": 1168481636573257728,
-            "dragons_attaquant": [
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de glace | 6"
-            ],
-            "timestamp": 1782901694,
-            "résolu": true
-        },
-        "24": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782901801,
-            "résolu": true
-        },
-        "25": {
-            "attaquant": 1168481636573257728,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6",
-                "Dragon chromatique | 6",
-                "Dragon des cieux | 6"
-            ],
-            "timestamp": 1782901868,
-            "résolu": true
-        },
-        "26": {
-            "attaquant": 1168481636573257728,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon des cieux | 6",
-                "Dragon de glace | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 6",
-                "Dragon de l'été | 6",
-                "Dragon chromatique | 6",
-                "Dragon des cieux | 6"
-            ],
-            "timestamp": 1782902192,
-            "résolu": true
-        },
-        "27": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 6",
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782902252,
-            "résolu": true
-        },
-        "28": {
-            "attaquant": 1168481636573257728,
-            "cible": 1119591730577162261,
-            "dragons_attaquant": [
-                "Dragon de glace | 6",
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 4",
-                "Dragon de poison | 5",
-                "Dragon de sable | 5"
-            ],
-            "timestamp": 1782902495,
-            "résolu": true
-        },
-        "29": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de glace | 6",
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [
-                "Dragon du soleil | 6",
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6"
-            ],
-            "timestamp": 1782914317,
-            "résolu": true
-        },
-        "30": {
-            "attaquant": 1168481636573257728,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon de glace | 6",
-                "Dragon des cieux | 6"
-            ],
-            "dragons_cible": [],
-            "timestamp": 1782914503,
-            "résolu": false
-        },
-        "31": {
-            "attaquant": 1453643861883752523,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon du soleil | 4",
-                "Grand Dragon Doré | 5"
-            ],
-            "dragons_cible": [
-                "Dragon du soleil | 6",
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782915301,
-            "résolu": true
-        },
-        "32": {
-            "attaquant": 1453643861883752523,
-            "cible": 1119591730577162261,
-            "dragons_attaquant": [
-                "Grand Dragon Doré | 5",
-                "Dragon du soleil | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de pierre | 4",
-                "Dragon de poison | 5",
-                "Dragon de sable | 5"
-            ],
-            "timestamp": 1782915402,
-            "résolu": true
-        },
-        "33": {
-            "attaquant": 1191742658016718909,
-            "cible": 1168481636573257728,
-            "dragons_attaquant": [
-                "Dragon de vent | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de lumière | 6",
-                "Dragon des ombres | 6",
-                "Dragon du soleil | 6",
-                "Dragon de pierre | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de sable | 4"
-            ],
-            "timestamp": 1782919057,
-            "résolu": true
-        },
-        "34": {
-            "attaquant": 1453643861883752523,
-            "cible": 1168481636573257728,
-            "dragons_attaquant": [
-                "Grand Dragon Doré | 6",
-                "Dragon éclipse | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de sable | 4"
-            ],
-            "timestamp": 1782920106,
-            "résolu": true
-        },
-        "35": {
-            "attaquant": 1191742658016718909,
-            "cible": 1453643861883752523,
-            "dragons_attaquant": [
-                "Dragon de vent | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de lumière | 6",
-                "Dragon des ombres | 6",
-                "Dragon du soleil | 6",
-                "Dragon de pierre | 6",
-                "Dragon corrompu | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de lumière | 4",
-                "Dragon éclipse | 4",
-                "Grand Dragon Doré | 6"
-            ],
-            "timestamp": 1782921027,
-            "résolu": true
-        },
-        "36": {
-            "attaquant": 1453643861883752523,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Grand Dragon Doré | 6",
-                "Dragon éclipse | 4",
-                "Dragon de lumière | 4"
-            ],
-            "dragons_cible": [
-                "Dragon du soleil | 6",
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de vent | 6"
-            ],
-            "timestamp": 1782930499,
-            "résolu": true
-        },
-        "37": {
-            "attaquant": 1453643861883752523,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Grand Dragon Doré | 6",
-                "Dragon éclipse | 4",
-                "Dragon de lumière | 4",
-                "Dragon du soleil | 4"
-            ],
-            "dragons_cible": [
-                "Dragon de vent | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon de lumière | 6",
-                "Dragon des ombres | 6",
-                "Dragon du soleil | 6",
-                "Dragon de pierre | 6",
-                "Dragon corrompu | 6",
-                "Dragon chromatique | 6"
-            ],
-            "timestamp": 1782930519,
-            "résolu": true
-        },
-        "38": {
-            "attaquant": 1168481636573257728,
-            "cible": 1191742658016718909,
-            "dragons_attaquant": [
-                "Dragon de sable | 4"
-            ],
-            "dragons_cible": [
-                "Dragon éclipse | 6",
-                "Dragon de feu | 6",
-                "Dragon électrique | 6",
-                "Dragon chromatique | 6",
-                "Dragon corrompu | 6",
-                "Dragon de pierre | 6",
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6"
-            ],
-            "timestamp": 1782930550,
-            "résolu": true
-        },
-        "39": {
-            "attaquant": 1119591730577162261,
-            "cible": 1214957600412803107,
-            "dragons_attaquant": [
-                "Dragon de pierre | 4",
-                "Dragon de poison | 5",
-                "Dragon de sable | 5",
-                "Dragon détruit | 5",
-                "Dragon chromatique | 4",
-                "Dragon corrompu | 4"
-            ],
-            "dragons_cible": [],
-            "timestamp": 1783026005,
-            "résolu": false
-        },
-        "40": {
-            "attaquant": 1191742658016718909,
-            "cible": 1479480336944468061,
-            "dragons_attaquant": [
-                "Dragon éclipse | 6",
-                "Dragon de feu | 6",
-                "Dragon électrique | 6",
-                "Dragon chromatique | 6",
-                "Dragon corrompu | 6",
-                "Dragon de pierre | 6",
-                "Dragon des ombres | 6",
-                "Dragon de lumière | 6",
-                "Grand Dragon Doré | 6"
-            ],
-            "dragons_cible": [
-                "Dragon de sang | 6",
-                "Grand Dragon Doré | 6",
-                "Dragon chromatique | 6",
-                "Dragon de la lune | 6",
-                "Dragon de l'été | 6"
-            ],
-            "timestamp": 1783026014,
-            "résolu": true
-        },
-        "41": {
-            "attaquant": 1453643861883752523,
-            "cible": 1295437098836295681,
-            "dragons_attaquant": [
-                "Grand Dragon Doré | 6",
-                "Dragon éclipse | 6",
-                "Dragon du soleil | 6",
-                "Dragon de lumière | 6",
-                "Dragon des cieux | 5"
-            ],
-            "dragons_cible": [],
-            "timestamp": 1783080141,
-            "résolu": false
+            "canne_max": true
         }
     },
     "1214957600412803107": {
-        "money": 5034,
+        "money": 0,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-07-04",
+        "last_daily": "2026-07-07",
         "inventory": [
+            "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1783149831,
+        "last_fish": 1783453605,
         "fish_inventory": [],
         "dragons": {
             "Dragon de pierre": [
-                6
+                6,
+                1,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon de l'été": [
-                6
-            ],
-            "Dragon chromatique": [
-                6
-            ],
-            "Dragon des cieux": [
-                6,
                 6,
                 1
             ],
-            "Dragon éclipse": [
+            "Dragon chromatique": [
                 6,
+                1,
+                1
+            ],
+            "Dragon des cieux": [
+                1
+            ],
+            "Dragon éclipse": [
                 6
             ],
             "Dragon des nuages": [
                 6,
-                6,
-                6
+                5
             ],
             "Dragon raté": [
-                1,
                 6
             ],
             "Grand Dragon Doré": [
-                6
+                6,
+                1
             ],
             "Dragon corrompu": [
-                6
+                6,
+                1,
+                1
             ],
             "Dragon du soleil": [
-                6
+                6,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon de la lune": [
                 6,
+                1,
                 1
             ],
             "Dragon de sang": [
                 6,
+                1,
                 1
             ],
             "Dragon des ombres": [
                 6
             ],
             "Dragon électrique": [
-                6
-            ],
-            "Dragon de feu": [
-                6
-            ],
-            "Dragon de glace": [
-                6
-            ],
-            "Dragon de vent": [
-                6
-            ],
-            "Dragon de lumière": [
                 6,
                 1
             ],
+            "Dragon de feu": [
+                6,
+                1
+            ],
+            "Dragon de glace": [
+                6,
+                1,
+                1
+            ],
+            "Dragon de vent": [
+                1,
+                1
+            ],
+            "Dragon de lumière": [
+                6
+            ],
             "Dragon de poison": [
+                4,
+                5,
+                6,
+                1,
+                1,
+                1
+            ],
+            "Dragon musical": [
+                6
+            ],
+            "Dragon de l'automne": [
+                6
+            ],
+            "Dragon de sable": [
+                1
+            ],
+            "Dragon de l'hiver": [
                 1
             ]
         },
-        "tokens": 5,
+        "tokens": 3,
         "progress_quests": {
             "boost3": true,
             "forgeron4": true,
@@ -752,75 +374,219 @@
         }
     },
     "1191742658016718909": {
-        "money": 158215,
+        "money": 16295,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-07-03",
+        "last_daily": "2026-07-23",
         "inventory": [
-            "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1783150801,
-        "fish_inventory": [
-            "🐟 Sardine"
-        ],
+        "last_fish": 1784825457,
+        "fish_inventory": [],
         "dragons": {
             "Dragon de vent": [
                 1,
-                1
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                3
             ],
             "Grand Dragon Doré": [
                 6
             ],
             "Dragon de lumière": [
-                6
+                6,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon des ombres": [
-                6
+                1,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon du soleil": [
-                1,
                 3,
+                1,
                 1
             ],
             "Dragon de pierre": [
-                6
+                1,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon corrompu": [
-                6
+                4,
+                1
             ],
             "Dragon chromatique": [
                 6,
+                1,
+                1,
                 1
             ],
             "Dragon des cieux": [
+                1,
+                1,
                 1
             ],
             "Dragon électrique": [
-                6
+                1,
+                1,
+                1
             ],
             "Dragon de feu": [
-                6
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon de poison": [
-                2
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
             ],
             "Dragon des nuages": [
                 1
             ],
             "Dragon de sang": [
+                1,
                 1
             ],
             "Dragon de la lune": [
+                1,
+                1,
+                1,
                 1
             ],
             "Dragon éclipse": [
                 6
+            ],
+            "Dragon de l'automne": [
+                1
+            ],
+            "Dragon de sable": [
+                1,
+                1,
+                1
+            ],
+            "Dragon de glace": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de l'été": [
+                1
+            ],
+            "Dragon de l'hiver": [
+                1
+            ],
+            "Dragon ancestral": [
+                1,
+                1,
+                1
+            ],
+            "Dragon musical": [
+                1
+            ],
+            "Dragon de poussière": [
+                1
+            ],
+            "Dragon raté": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon d'orage": [
+                1
+            ],
+            "Dragon radioactif": [
+                1
+            ],
+            "Dragon miroir": [
+                1
+            ],
+            "Dragon possédé": [
+                1
+            ],
+            "Dragon d'obsidienne": [
+                1
+            ],
+            "Dragon spectral": [
+                1
+            ],
+            "Dragon d'argile": [
+                1
+            ],
+            "Dragon des vagues": [
+                1
+            ],
+            "Dragon de la mer": [
+                1
+            ],
+            "Dragon des cavernes": [
+                1
+            ],
+            "Dragon des abysses": [
+                1
+            ],
+            "Dragon de lave": [
+                1
+            ],
+            "Dragon de cristal": [
+                1
+            ],
+            "Dragon de diamant": [
+                1
+            ],
+            "Dragon détruit": [
+                1
+            ],
+            "Dragon de terreur": [
+                1
+            ],
+            "Dragon mécanique": [
+                1
+            ],
+            "Dragon de métal": [
+                1
+            ],
+            "Dragon d'eau": [
+                1
+            ],
+            "Dragon de rouille": [
+                1
+            ],
+            "Dragon champignon": [
+                1
+            ],
+            "Dragon de plante": [
+                3
             ]
         },
-        "tokens": 11,
+        "tokens": 1,
         "progress_quests": {
             "boost3": true,
             "forgeron4": true,
@@ -830,14 +596,14 @@
         }
     },
     "1453643861883752523": {
-        "money": 1175,
+        "money": 8245,
         "boost": 3,
-        "job_level": 1,
-        "last_daily": "2026-07-03",
+        "job_level": 3,
+        "last_daily": "2026-07-23",
         "inventory": [],
         "farm": false,
-        "fishing_rod": 1,
-        "last_fish": 1783100905,
+        "fishing_rod": 2,
+        "last_fish": 1784818605,
         "fish_inventory": [],
         "dragons": {
             "Grand Dragon Doré": [
@@ -845,18 +611,21 @@
             ],
             "Dragon de poison": [
                 1,
+                1,
                 1
             ],
             "Dragon des ombres": [
+                1,
                 1
             ],
             "Dragon de glace": [
+                1,
+                6,
+                1,
                 1
             ],
             "Dragon de vent": [
-                1
-            ],
-            "Dragon des nuages": [
+                1,
                 1
             ],
             "Dragon éclipse": [
@@ -867,6 +636,7 @@
             ],
             "Dragon de lumière": [
                 6,
+                1,
                 1
             ],
             "Dragon des cieux": [
@@ -874,9 +644,36 @@
             ],
             "Dragon de la lune": [
                 6
+            ],
+            "Dragon de pierre": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon des nuages": [
+                6
+            ],
+            "Dragon de feu": [
+                1,
+                1
+            ],
+            "Dragon de sable": [
+                1,
+                1
+            ],
+            "Dragon d'eau": [
+                1
+            ],
+            "Dragon électrique": [
+                1,
+                1
+            ],
+            "Dragon du printemps": [
+                6
             ]
         },
-        "tokens": 2,
+        "tokens": 17,
         "progress_quests": {
             "boost3": true,
             "forgeron4": false,
@@ -886,58 +683,118 @@
         }
     },
     "1295437098836295681": {
-        "money": 14285,
+        "money": 51036,
         "boost": 1,
-        "job_level": 4,
-        "last_daily": "2026-07-04",
-        "inventory": [],
-        "farm": false,
-        "fishing_rod": 1,
-        "last_fish": 1783147888,
-        "fish_inventory": [],
+        "job_level": 6,
+        "last_daily": "2026-07-23",
+        "inventory": [
+            "<:oeuf_de_dragon_epique:1516064792400629802> Œuf de dragon épique",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre"
+        ],
+        "farm": true,
+        "fishing_rod": 2,
+        "last_fish": 1784825482,
+        "fish_inventory": [
+            "🐟 Sardine",
+            "🐟 Sardine",
+            "🐟 Sardine",
+            "🐟 Sardine"
+        ],
         "dragons": {},
-        "tokens": 1,
+        "tokens": 3,
         "progress_quests": {
             "boost3": false,
             "forgeron4": true,
-            "ferme": false,
+            "ferme": true,
             "fish10000": false,
             "canne_max": false
         }
     },
     "1159164756234621019": {
-        "money": 4740,
-        "boost": 1,
-        "job_level": 0,
-        "last_daily": "2026-07-03",
+        "money": 2830,
+        "boost": 3,
+        "job_level": 6,
+        "last_daily": "2026-07-23",
         "inventory": [],
         "farm": false,
         "fishing_rod": 1,
-        "last_fish": 1783091422,
+        "last_fish": 1784828052,
         "fish_inventory": [],
         "dragons": {
             "Dragon d'eau": [
                 1
             ],
             "Dragon du soleil": [
+                1,
+                1
+            ],
+            "Dragon de vent": [
+                1,
+                1
+            ],
+            "Dragon des ombres": [
+                1
+            ],
+            "Dragon électrique": [
+                1
+            ],
+            "Dragon de sable": [
+                1
+            ],
+            "Dragon chromatique": [
+                3
+            ],
+            "Dragon corrompu": [
+                1
+            ],
+            "Dragon de glace": [
+                1
+            ],
+            "Dragon de sang": [
+                1
+            ],
+            "Dragon des cieux": [
+                1
+            ],
+            "Dragon de l'hiver": [
+                1
+            ],
+            "Dragon de feu": [
+                1,
+                1
+            ],
+            "Dragon de lumière": [
+                1
+            ],
+            "Dragon de pierre": [
+                1
+            ],
+            "Dragon de poison": [
+                1
+            ],
+            "Dragon ancestral": [
                 1
             ]
         },
-        "tokens": 0,
+        "tokens": 14,
         "progress_quests": {
-            "boost3": false,
-            "forgeron4": false,
+            "boost3": true,
+            "forgeron4": true,
             "ferme": false,
             "fish10000": false,
             "canne_max": false
         }
     },
     "daily_quests": {
-        "date": "2026-07-04",
+        "date": "2026-07-23",
         "quests": [
             {
-                "id": 17,
-                "name": "Remporter un drop",
+                "id": 1,
+                "name": "Augmenter un dragon d'un stade",
                 "reward": 1
             },
             {
@@ -946,29 +803,41 @@
                 "reward": 2
             },
             {
-                "id": 15,
-                "name": "Échanger 20 tokens contre de l'argent",
+                "id": 2,
+                "name": "Augmenter un dragon à son stade maximal",
                 "reward": 2
             }
         ],
-        "completed": {}
+        "completed": {
+            "1191742658016718909": [
+                1
+            ],
+            "1479480336944468061": [
+                1,
+                2
+            ],
+            "1119591730577162261": [
+                1
+            ]
+        }
     },
     "1068951766227484772": {
-        "money": 2160,
+        "money": 2250,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
         "inventory": [],
         "farm": false,
         "fishing_rod": 1,
-        "last_fish": 1783076139,
+        "last_fish": 1783158292,
         "fish_inventory": [
             "🦀 Crabe",
             "🐟 Sardine",
             "🐟 Sardine",
             "🐟 Sardine",
             "🐟 Sardine",
-            "🦀 Crabe"
+            "🦀 Crabe",
+            "🐟 Sardine"
         ],
         "dragons": {},
         "tokens": 0,
@@ -981,17 +850,17 @@
         }
     },
     "1231161426153046056": {
-        "money": 1305,
+        "money": 4070,
         "boost": 1,
         "job_level": 0,
-        "last_daily": "",
+        "last_daily": "2026-07-23",
         "inventory": [],
         "farm": false,
         "fishing_rod": 1,
         "last_fish": 0,
         "fish_inventory": [],
         "dragons": {},
-        "tokens": 3,
+        "tokens": 6,
         "progress_quests": {
             "boost3": false,
             "forgeron4": false,
@@ -1021,80 +890,324 @@
         }
     },
     "1479480336944468061": {
-        "money": 39660,
+        "money": 4511,
         "boost": 3,
-        "job_level": 3,
-        "last_daily": "2026-07-04",
+        "job_level": 6,
+        "last_daily": "2026-07-23",
         "inventory": [
-            "🐐 Chèvre"
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance"
         ],
         "farm": true,
-        "fishing_rod": 2,
-        "last_fish": 1783150594,
+        "fishing_rod": 3,
+        "last_fish": 1784826232,
         "fish_inventory": [
+            "🐟 Sardine",
+            "🐠 Saumon",
+            "🐟 Sardine",
             "🐟 Sardine"
         ],
         "dragons": {
             "Dragon de feu": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
             ],
             "Dragon de poison": [
+                1,
+                1,
+                1,
+                1,
                 1
             ],
             "Dragon de vent": [
-                1
-            ],
-            "Dragon de lumière": [
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
             ],
             "Dragon de sang": [
-                6
+                1,
+                1,
+                1
             ],
             "Grand Dragon Doré": [
                 6
             ],
             "Dragon chromatique": [
-                6
-            ],
-            "Dragon de la lune": [
-                6
-            ],
-            "Dragon de glace": [
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
             ],
-            "Dragon de pierre": [
-                2
+            "Dragon de la lune": [
+                1,
+                1
             ],
             "Dragon de l'été": [
                 6
             ],
-            "Dragon du printemps": [
+            "Dragon raté": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
                 1
             ],
-            "Dragon raté": [
+            "Dragon du printemps": [
+                6
+            ],
+            "Dragon de pierre": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de lumière": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de glace": [
+                1,
+                1,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon des ombres": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de sable": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon électrique": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon corrompu": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon des cieux": [
+                1,
+                1,
+                1
+            ],
+            "Dragon du soleil": [
+                1,
+                1,
+                1
+            ],
+            "Dragon d'eau": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon ancestral": [
+                6,
+                1
+            ],
+            "Dragon de poussière": [
+                1
+            ],
+            "Dragon d'orage": [
+                1
+            ],
+            "Dragon radioactif": [
+                1
+            ],
+            "Dragon possédé": [
+                1
+            ],
+            "Dragon d'obsidienne": [
+                1
+            ],
+            "Dragon d'argile": [
+                1
+            ],
+            "Dragon des vagues": [
+                1
+            ],
+            "Dragon des cavernes": [
+                1
+            ],
+            "Dragon de lave": [
+                1
+            ],
+            "Dragon de diamant": [
+                1
+            ],
+            "Dragon détruit": [
+                1
+            ],
+            "Dragon mécanique": [
+                1
+            ],
+            "Dragon de métal": [
+                1
+            ],
+            "Dragon de rouille": [
+                1
+            ],
+            "Dragon compacté": [
+                6
+            ],
+            "Dragon champignon": [
+                1
+            ],
+            "Dragon pissenlit": [
+                1
+            ],
+            "Dragon de cristal": [
+                1
+            ],
+            "Dragon de l'automne": [
+                1
+            ],
+            "Dragon de l'hiver": [
+                1
+            ],
+            "Dragon d'améthyste": [
+                6
+            ],
+            "Dragon musical": [
+                1
+            ],
+            "Dragon des nuages": [
+                1
+            ],
+            "Dragon du crépuscule": [
+                1
+            ],
+            "Dragon de l'aube": [
+                1
+            ],
+            "Dragon spectral": [
+                1
+            ],
+            "Dragon de pouvoir": [
+                1
+            ],
+            "Dragon miroir": [
+                1
+            ],
+            "Dragon arc-en-ciel": [
+                1
+            ],
+            "Dragon de fleur": [
+                1
+            ],
+            "Dragon caméléon": [
+                1
+            ],
+            "Dragon de plante": [
+                1
+            ],
+            "Dragon de la mer": [
+                1
+            ],
+            "Dragon de corail": [
+                1
+            ],
+            "Dragon de terreur": [
+                1
+            ],
+            "Dragon diabolique": [
+                1
+            ],
+            "Dragon des abysses": [
+                6
+            ],
+            "Dragon éclipse": [
+                1
+            ],
+            "Dragon de la nuit": [
+                1
+            ],
+            "Dragon des aurores": [
+                1
+            ],
+            "Dragon des étoiles": [
                 1
             ]
         },
-        "tokens": 1,
+        "tokens": 4,
         "progress_quests": {
             "boost3": true,
-            "forgeron4": false,
+            "forgeron4": true,
             "ferme": true,
             "fish10000": false,
-            "canne_max": false
+            "canne_max": true
         }
     },
     "1379904903639601225": {
-        "money": 690,
+        "money": 885,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
         "inventory": [],
         "farm": false,
         "fishing_rod": 1,
-        "last_fish": 0,
-        "fish_inventory": [],
-        "dragons": {},
+        "last_fish": 1783275739,
+        "fish_inventory": [
+            "🐟 Sardine"
+        ],
+        "dragons": {
+            "Dragon de la lune": [
+                1
+            ],
+            "Dragon raté": [
+                1
+            ]
+        },
         "tokens": 0,
         "progress_quests": {
             "boost3": false,
@@ -1105,7 +1218,7 @@
         }
     },
     "1504841790035853445": {
-        "money": 30,
+        "money": 4925,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
@@ -1114,7 +1227,11 @@
         "fishing_rod": 1,
         "last_fish": 0,
         "fish_inventory": [],
-        "dragons": {},
+        "dragons": {
+            "Dragon de feu": [
+                1
+            ]
+        },
         "tokens": 0,
         "progress_quests": {
             "boost3": false,
@@ -1126,41 +1243,6 @@
     },
     "hdv": [
         {
-            "id": 1,
-            "vendeur": 1214957600412803107,
-            "nom": "Dragon de pierre",
-            "stade": 1,
-            "prix": 3500
-        },
-        {
-            "id": 15,
-            "vendeur": 1479480336944468061,
-            "nom": "Dragon de pierre",
-            "stade": 1,
-            "prix": 2000
-        },
-        {
-            "id": 17,
-            "vendeur": 1214957600412803107,
-            "nom": "Dragon de lumière",
-            "stade": 1,
-            "prix": 2000
-        },
-        {
-            "id": 18,
-            "vendeur": 1479480336944468061,
-            "nom": "Dragon de feu",
-            "stade": 1,
-            "prix": 1900
-        },
-        {
-            "id": 20,
-            "vendeur": 1479480336944468061,
-            "nom": "Dragon de feu",
-            "stade": 1,
-            "prix": 1900
-        },
-        {
             "id": 23,
             "vendeur": 1479480336944468061,
             "nom": "Dragon de pierre",
@@ -1168,22 +1250,36 @@
             "prix": 1900
         },
         {
-            "id": 24,
-            "vendeur": 1479480336944468061,
-            "nom": "Dragon de lumière",
-            "stade": 1,
-            "prix": 1900
+            "id": 28,
+            "vendeur": 1214957600412803107,
+            "nom": "Dragon des cieux",
+            "stade": 6,
+            "prix": 1000000000000000
         },
         {
-            "id": 26,
-            "vendeur": 1479480336944468061,
-            "nom": "Dragon de vent",
+            "id": 38,
+            "vendeur": 1453643861883752523,
+            "nom": "Dragon de lumière",
             "stade": 1,
-            "prix": 1900
+            "prix": 1750
+        },
+        {
+            "id": 40,
+            "vendeur": 1453643861883752523,
+            "nom": "Dragon du soleil",
+            "stade": 1,
+            "prix": 6900000
+        },
+        {
+            "id": 41,
+            "vendeur": 1191742658016718909,
+            "nom": "Dragon du printemps",
+            "stade": 3,
+            "prix": 605000
         }
     ],
     "1434185734205603911": {
-        "money": 315,
+        "money": 585,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
@@ -1223,34 +1319,119 @@
         }
     },
     "1491419960117956781": {
-        "money": 16135,
+        "money": 150123,
         "boost": 3,
-        "job_level": 3,
-        "last_daily": "2026-07-03",
-        "inventory": [],
-        "farm": false,
-        "fishing_rod": 1,
-        "last_fish": 1783088605,
-        "fish_inventory": [],
+        "job_level": 6,
+        "last_daily": "2026-07-23",
+        "inventory": [
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre"
+        ],
+        "farm": true,
+        "fishing_rod": 3,
+        "last_fish": 1784830250,
+        "fish_inventory": [
+            "🐟 Sardine"
+        ],
         "dragons": {
             "Dragon de feu": [
+                1,
+                1,
+                1,
                 1
             ],
             "Dragon des cieux": [
+                6,
+                1
+            ],
+            "Dragon de lumière": [
+                1
+            ],
+            "Dragon des nuages": [
+                6,
                 6
+            ],
+            "Dragon éclipse": [
+                6
+            ],
+            "Dragon raté": [
+                1
+            ],
+            "Dragon de sang": [
+                1,
+                1,
+                1
+            ],
+            "Grand Dragon Doré": [
+                1,
+                1
+            ],
+            "Dragon du soleil": [
+                1,
+                1,
+                1,
+                3
+            ],
+            "Dragon corrompu": [
+                1,
+                1,
+                1
+            ],
+            "Dragon de poison": [
+                1
+            ],
+            "Dragon de la lune": [
+                6
+            ],
+            "Dragon des ombres": [
+                1
+            ],
+            "Dragon spectral": [
+                1
+            ],
+            "Dragon chromatique": [
+                1,
+                1,
+                1
+            ],
+            "Dragon de vent": [
+                1
+            ],
+            "Dragon de pierre": [
+                1
+            ],
+            "Dragon de poussière": [
+                1
+            ],
+            "Dragon d'améthyste": [
+                1
+            ],
+            "Dragon de l'hiver": [
+                1
+            ],
+            "Dragon ancestral": [
+                1
+            ],
+            "Dragon de cristal": [
+                1
+            ],
+            "Dragon de diamant": [
+                1
             ]
         },
-        "tokens": 0,
+        "tokens": 13,
         "progress_quests": {
             "boost3": true,
-            "forgeron4": false,
-            "ferme": false,
+            "forgeron4": true,
+            "ferme": true,
             "fish10000": false,
-            "canne_max": false
+            "canne_max": true
         }
     },
     "1368820206482362450": {
-        "money": 2960,
+        "money": 4025,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
@@ -1290,15 +1471,17 @@
         }
     },
     "1168481636573257728": {
-        "money": 5590,
+        "money": 8477,
         "boost": 1,
         "job_level": 1,
-        "last_daily": "2026-07-04",
+        "last_daily": "2026-07-21",
         "inventory": [],
         "farm": false,
-        "fishing_rod": 1,
-        "last_fish": 1783148195,
-        "fish_inventory": [],
+        "fishing_rod": 2,
+        "last_fish": 1784644541,
+        "fish_inventory": [
+            "🦀 Crabe"
+        ],
         "dragons": {
             "Dragon de glace": [
                 6
@@ -1323,9 +1506,15 @@
             ],
             "Dragon radioactif": [
                 1
+            ],
+            "Dragon de sang": [
+                1
+            ],
+            "Dragon électrique": [
+                1
             ]
         },
-        "tokens": 0,
+        "tokens": 2,
         "progress_quests": {
             "boost3": false,
             "forgeron4": false,
@@ -1335,15 +1524,17 @@
         }
     },
     "879311709259571232": {
-        "money": 540,
+        "money": 1350,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
         "inventory": [],
         "farm": false,
         "fishing_rod": 1,
-        "last_fish": 0,
-        "fish_inventory": [],
+        "last_fish": 1783168661,
+        "fish_inventory": [
+            "🐟 Sardine"
+        ],
         "dragons": {},
         "tokens": 0,
         "progress_quests": {
@@ -1355,7 +1546,7 @@
         }
     },
     "1514521530774847498": {
-        "money": 1,
+        "money": 0,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
@@ -1375,17 +1566,17 @@
         }
     },
     "1323435959496474624": {
-        "money": 1500,
+        "money": 61500,
         "boost": 1,
         "job_level": 0,
-        "last_daily": "",
+        "last_daily": "2026-07-22",
         "inventory": [],
         "farm": false,
         "fishing_rod": 1,
         "last_fish": 0,
         "fish_inventory": [],
         "dragons": {},
-        "tokens": 0,
+        "tokens": 1,
         "progress_quests": {
             "boost3": false,
             "forgeron4": false,
@@ -1415,7 +1606,427 @@
         }
     },
     "690201665231782046": {
+        "money": 255,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1442154141282734104": {
+        "money": 9065,
+        "boost": 1,
+        "job_level": 1,
+        "last_daily": "2026-07-16",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 1784235119,
+        "fish_inventory": [],
+        "dragons": {
+            "Dragon du soleil": [
+                1
+            ],
+            "Dragon de poison": [
+                3
+            ],
+            "Dragon de lumière": [
+                1
+            ]
+        },
+        "tokens": 2,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1449502171987968131": {
+        "money": 75,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1496954086405181450": {
         "money": 30,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1485973482645880883": {
+        "money": 45,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1437809168567500851": {
+        "money": 90,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1524347222920007720": {
+        "money": 1350,
+        "boost": 3,
+        "job_level": 6,
+        "last_daily": "2026-07-23",
+        "inventory": [
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "🐐 Chèvre",
+            "🐐 Chèvre"
+        ],
+        "farm": true,
+        "fishing_rod": 3,
+        "last_fish": 1784829423,
+        "fish_inventory": [
+            "🐟 Sardine"
+        ],
+        "dragons": {
+            "Dragon de la lune": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon du soleil": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon des cieux": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de l'hiver": [
+                1,
+                1
+            ],
+            "Dragon corrompu": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de sang": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de l'été": [
+                1
+            ],
+            "Dragon de lumière": [
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de glace": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de l'automne": [
+                1,
+                1,
+                1
+            ],
+            "Dragon électrique": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon chromatique": [
+                1,
+                1,
+                1
+            ],
+            "Dragon des ombres": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon musical": [
+                2,
+                1
+            ],
+            "Dragon de sable": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de poison": [
+                1,
+                1,
+                1
+            ],
+            "Dragon ancestral": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de pierre": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon d'eau": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de feu": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon de vent": [
+                1,
+                1
+            ],
+            "Dragon raté": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "Dragon d'argile": [
+                1
+            ],
+            "Grand Dragon Doré": [
+                1
+            ],
+            "Dragon des étoiles": [
+                1
+            ],
+            "Dragon des galaxies": [
+                1
+            ],
+            "Dragon de cristal": [
+                1
+            ],
+            "Dragon miroir": [
+                1
+            ],
+            "Dragon éclipse": [
+                1
+            ],
+            "Dragon arc-en-ciel": [
+                1
+            ],
+            "Dragon de l'espace": [
+                6
+            ]
+        },
+        "tokens": 12,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": true,
+            "fish10000": false,
+            "canne_max": true
+        }
+    },
+    "1151918455222706288": {
+        "money": 41826,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "2026-07-21",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 1784828536,
+        "fish_inventory": [],
+        "dragons": {
+            "Dragon d'eau": [
+                1
+            ]
+        },
+        "tokens": 2,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1128371144068710480": {
+        "money": 270,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1513571708295184406": {
+        "money": 150,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1445864695247667351": {
+        "money": 180,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
