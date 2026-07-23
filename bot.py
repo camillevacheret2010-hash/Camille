@@ -969,10 +969,6 @@ async def on_ready():
         data["combats"] = {}
 
     save_data(data)
-    try:
-        check_combats.start()
-    except RuntimeError:
-        pass  # évite l'erreur si la task est déjà lancée
 
 ALLOWED_GUILD_ID = 1494821494604435536  # ID de TON serveur
 
