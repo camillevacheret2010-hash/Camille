@@ -563,7 +563,7 @@ DRAGONCOLLEC = {
     },
 
     "Dragon d'orage": {
-        "emoji": "<:spectral:1516466828015177970>",
+        "emoji": "<:orage:1516466828015177970>",
         "rarete": "Commun",
         "obtention": "Hybride",
         "parents": ["Dragon électrique", "Dragon de vent"]
@@ -2424,28 +2424,15 @@ async def autocomplete_ton_dragon(interaction: discord.Interaction, current: str
 
 
 class ChoixDragonCibleSelect(discord.ui.Select):
-    def __init__(self, user, cible, ton_nom, ton_stade):
+    def __init__(self, user, cible, ton_nom, ton_stade, dragons_page):
         self.user = user
         self.cible = cible
         self.ton_nom = ton_nom
         self.ton_stade = ton_stade
 
-        data = load_data()
-        cible_data = get_user_data(data, cible.id)
-
         options = []
-        index = 0
-
-        for nom, stades in cible_data["dragons"].items():
-            for stade in stades:
-                entry = f"{nom} | {stade}"
-                unique_value = f"{entry} | UID_{index}"
-                options.append(discord.SelectOption(label=entry, value=unique_value))
-                index += 1
-
-        # Sécurité : si aucun dragon
-        if not options:
-            options = [discord.SelectOption(label="Aucun dragon disponible", value="none")]
+        for entry, uid in dragons_page:
+            options.append(discord.SelectOption(label=entry, value=f"{entry}|UID_{uid}"))
 
         super().__init__(
             placeholder="Choisis le dragon de la cible",
@@ -2458,14 +2445,10 @@ class ChoixDragonCibleSelect(discord.ui.Select):
         if interaction.user.id != self.user.id:
             return await interaction.response.send_message("❌ Ce menu n'est pas pour toi.", ephemeral=True)
 
-        if self.values[0] == "none":
-            return await interaction.response.send_message("❌ Ce joueur n'a aucun dragon.", ephemeral=True)
-
         raw_value = self.values[0]
-        clean_value = raw_value.rsplit("| UID_", 1)[0]  # on enlève l'UID
+        clean_value = raw_value.rsplit("|UID_", 1)[0]
 
         son_nom, son_stade = parse_dragon_entry(clean_value)
-
 
         view = ConfirmationView(self.user, self.cible, self.ton_nom, self.ton_stade, son_nom, son_stade)
 
@@ -2481,20 +2464,81 @@ class ChoixDragonCibleSelect(discord.ui.Select):
             color=discord.Color.orange()
         )
 
-        await interaction.response.edit_message(content=f"{self.cible.mention}", embed=embed, view=view)
+        await interaction.response.edit_message(embed=embed, view=view)
+
 
 
 
 
 class ChoixDragonCibleView(discord.ui.View):
     def __init__(self, user, cible, ton_nom, ton_stade):
-        super().__init__(timeout=60)
-        self.add_item(ChoixDragonCibleSelect(user, cible, ton_nom, ton_stade))
+        super().__init__(timeout=1200)
+        self.user = user
+        self.cible = cible
+        self.ton_nom = ton_nom
+        self.ton_stade = ton_stade
+
+        data = load_data()
+        cible_data = get_user_data(data, cible.id)
+
+        # Liste complète des dragons
+        self.dragons = []
+        uid = 0
+        for nom, stades in cible_data["dragons"].items():
+            for stade in stades:
+                entry = f"{nom} | {stade}"
+                self.dragons.append((entry, uid))
+                uid += 1
+
+        self.page = 0
+        self.per_page = 25
+
+        self.update_page()
+
+    def update_page(self):
+        start = self.page * self.per_page
+        end = start + self.per_page
+        dragons_page = self.dragons[start:end]
+
+        self.clear_items()
+
+        self.add_item(ChoixDragonCibleSelect(
+            self.user, self.cible, self.ton_nom, self.ton_stade, dragons_page
+        ))
+
+        # Bouton précédent
+        if self.page > 0:
+            self.add_item(self.PreviousButton())
+
+        # Bouton suivant
+        if end < len(self.dragons):
+            self.add_item(self.NextButton())
+
+    class NextButton(discord.ui.Button):
+        def __init__(self):
+            super().__init__(label="➡️ Page suivante", style=discord.ButtonStyle.blurple)
+
+        async def callback(self, interaction: discord.Interaction):
+            view: ChoixDragonCibleView = self.view
+            view.page += 1
+            view.update_page()
+            await interaction.response.edit_message(view=view)
+
+    class PreviousButton(discord.ui.Button):
+        def __init__(self):
+            super().__init__(label="⬅️ Page précédente", style=discord.ButtonStyle.blurple)
+
+        async def callback(self, interaction: discord.Interaction):
+            view: ChoixDragonCibleView = self.view
+            view.page -= 1
+            view.update_page()
+            await interaction.response.edit_message(view=view)
+
 
 
 class ConfirmationView(discord.ui.View):
     def __init__(self, user, cible, ton_nom, ton_stade, son_nom, son_stade):
-        super().__init__(timeout=60)
+        super().__init__(timeout=1200)
         self.user = user
         self.cible = cible
         self.ton_nom = ton_nom
@@ -3561,340 +3605,6 @@ async def quetes(interaction: discord.Interaction):
 #########################################
 
 ID_SALON_GUERRE = 1498036546928902185
-
-RARETE_POINTS = {
-    "commun": 1,
-    "rare": 2,
-    "epique": 3,
-    "legendaire": 4,
-    "divin": 5,
-    "unique": 6
-}
-
-def dragons_deja_engages(data, user_id):
-    combats = data.get("combats", {})
-    engages = set()
-
-    for cid, combat in combats.items():
-        if combat["résolu"]:
-            continue
-
-        # Dragons utilisés par l'utilisateur en attaque
-        if combat["attaquant"] == user_id:
-            for d in combat["dragons_attaquant"]:
-                engages.add(d)
-
-        # Dragons utilisés par l'utilisateur en défense
-        if combat["cible"] == user_id:
-            for d in combat["dragons_cible"]:
-                engages.add(d)
-
-    return engages
-
-
-def parse_dragon_entry(entry):
-    # entry = "NomDuDragon | 4"
-    nom, stade = entry.split(" | ")
-    return nom, int(stade)
-
-
-def calcul_points(dragons):
-    total = 0
-    for entry in dragons:
-        nom, stade = parse_dragon_entry(entry)
-        rarete = DRAGONCOLLEC[nom]["rarete"].lower().replace("é", "e")  # 🔥 normalisation accents
-        total += stade + RARETE_POINTS[rarete]
-    return total
-
-
-
-class PaginationView(discord.ui.View):
-    def __init__(self, pages, user):
-        super().__init__(timeout=120)
-        self.pages = pages
-        self.user = user
-        self.index = 0
-
-    async def update(self, interaction):
-        await interaction.response.edit_message(embed=self.pages[self.index], view=self)
-
-    @discord.ui.button(label="⬅️", style=discord.ButtonStyle.gray)
-    async def previous(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if interaction.user != self.user:
-            return await interaction.response.send_message("❌ Ce bouton ne t'appartient pas.", ephemeral=True)
-
-        if self.index > 0:
-            self.index -= 1
-            await self.update(interaction)
-
-    @discord.ui.button(label="➡️", style=discord.ButtonStyle.gray)
-    async def next(self, interaction: discord.Interaction, button: discord.ui.Button):
-        if interaction.user != self.user:
-            return await interaction.response.send_message("❌ Ce bouton ne t'appartient pas.", ephemeral=True)
-
-        if self.index < len(self.pages) - 1:
-            self.index += 1
-            await self.update(interaction)
-
-
-@bot.tree.command(name="combat_attaquer", description="Lance un assaut contre un joueur")
-async def combat_attaquer(interaction: discord.Interaction, membre: discord.Member):
-    if membre.id == interaction.user.id:
-        return await interaction.response.send_message("❌ Tu ne peux pas t'attaquer toi-même.", ephemeral=True)
-
-    data = load_data()
-    user_data = get_user_data(data, interaction.user.id)
-    # Empêche d'attaquer un joueur à 0 tokens
-    cible_data = get_user_data(data, membre.id)
-    if cible_data["tokens"] <= 0:
-        return await interaction.response.send_message(
-            "❌ Ce joueur n'a plus de tokens, tu ne peux pas l'attaquer.",
-            ephemeral=True
-            )
-
-    # Dragons stade >= 4
-    engages = dragons_deja_engages(data, interaction.user.id)
-
-    options = []
-    for nom, stades in user_data["dragons"].items():
-        for stade in stades:
-            if stade >= 4:
-                entry = f"{nom} | {stade}"
-                if entry not in engages:  # 🔥 dragon déjà utilisé → interdit
-                    options.append(discord.SelectOption(label=entry, value=entry))
-
-
-    if not options:
-        return await interaction.response.send_message(
-            "❌ Tu n'as aucun dragon de stade **4 ou plus** pour attaquer.",
-            ephemeral=True
-        )
-
-    view = ChoixDragonsAttaqueView(interaction.user, membre, options)
-    await interaction.response.send_message(
-        "Sélectionne les dragons que tu veux envoyer au combat :",
-        view=view,
-        ephemeral=True
-    )
-
-
-class ChoixDragonsAttaqueView(discord.ui.View):
-    def __init__(self, attaquant, cible, options):
-        super().__init__(timeout=60)
-        self.attaquant = attaquant
-        self.cible = cible
-
-        self.add_item(ChoixDragonsAttaqueSelect(options))
-
-class ChoixDragonsAttaqueSelect(discord.ui.Select):
-    def __init__(self, options):
-        super().__init__(
-            placeholder="Choisis tes dragons",
-            options=options,
-            min_values=1,
-            max_values=len(options)
-        )
-
-    async def callback(self, interaction: discord.Interaction):
-        if interaction.user != self.view.attaquant:
-            return await interaction.response.send_message("❌ Ce menu n'est pas pour toi.", ephemeral=True)
-
-        dragons = self.values
-
-        data = load_data()
-        combats = data.setdefault("combats", {})
-
-        combat_id = str(len(combats) + 1)
-
-        combats[combat_id] = {
-            "attaquant": self.view.attaquant.id,
-            "cible": self.view.cible.id,
-            "dragons_attaquant": dragons,
-            "dragons_cible": [],
-            "timestamp": int(time.time()),
-            "résolu": False
-        }
-
-        save_data(data)
-
-        salon = bot.get_channel(ID_SALON_GUERRE)
-        await salon.send(
-            f"⚔️ Une guerre commence entre **{self.view.attaquant.mention}** et **{self.view.cible.mention}** !"
-        )
-
-        await interaction.response.send_message(
-            "🔥 Tes dragons ont été envoyés au combat !",
-            ephemeral=True
-        )
-
-
-@bot.tree.command(name="combat_defendre", description="Défendre une guerre en cours")
-async def combat_defendre(interaction: discord.Interaction, guerre_id: str):
-    data = load_data()
-    combats = data.get("combats", {})
-
-    if guerre_id not in combats:
-        return await interaction.response.send_message("❌ Cette guerre n'existe pas.", ephemeral=True)
-
-    combat = combats[guerre_id]
-    if combat["dragons_cible"]:
-        return await interaction.response.send_message(
-            "❌ Tu as déjà défendu cette guerre.",
-            ephemeral=True
-            )
-
-    if combat["cible"] != interaction.user.id:
-        return await interaction.response.send_message("❌ Tu n'es pas la cible de cette guerre.", ephemeral=True)
-
-    if combat["résolu"]:
-        return await interaction.response.send_message("❌ Cette guerre est déjà résolue.", ephemeral=True)
-
-    user_data = get_user_data(data, interaction.user.id)
-
-    engages = dragons_deja_engages(data, interaction.user.id)
-
-    options = []
-    for nom, stades in user_data["dragons"].items():
-        for stade in stades:
-            if stade >= 4:
-                entry = f"{nom} | {stade}"
-                if entry not in engages:  # 🔥 dragon déjà utilisé → interdit
-                    options.append(discord.SelectOption(label=entry, value=entry))
-
-
-    if not options:
-        return await interaction.response.send_message(
-            "❌ Tu n'as aucun dragon de stade **4 ou plus** pour te défendre.",
-            ephemeral=True
-        )
-
-    view = ChoixDragonsDefenseView(interaction.user, guerre_id, options)
-    await interaction.response.send_message(
-        "Sélectionne les dragons que tu veux envoyer en défense :",
-        view=view,
-        ephemeral=True
-    )
-
-
-class ChoixDragonsDefenseView(discord.ui.View):
-    def __init__(self, defenseur, guerre_id, options):
-        super().__init__(timeout=60)
-        self.defenseur = defenseur
-        self.guerre_id = guerre_id
-
-        self.add_item(ChoixDragonsDefenseSelect(options))
-
-class ChoixDragonsDefenseSelect(discord.ui.Select):
-    def __init__(self, options):
-        super().__init__(
-            placeholder="Choisis tes dragons",
-            options=options,
-            min_values=1,
-            max_values=len(options)
-        )
-
-    async def callback(self, interaction: discord.Interaction):
-        if interaction.user != self.view.defenseur:
-            return await interaction.response.send_message("❌ Ce menu n'est pas pour toi.", ephemeral=True)
-
-        dragons = self.values
-
-        data = load_data()
-        combat = data["combats"][self.view.guerre_id]
-
-        combat["dragons_cible"] = dragons
-
-        # Calcul des points
-        points_attaquant = calcul_points(combat["dragons_attaquant"])
-        points_cible = calcul_points(combat["dragons_cible"])
-
-        if points_attaquant > points_cible:
-            gagnant = combat["attaquant"]
-            perdant = combat["cible"]
-            gain_tokens = points_attaquant // 4
-        else:
-            gagnant = combat["cible"]
-            perdant = combat["attaquant"]
-            gain_tokens = points_cible // 4
-
-        # Empêche les tokens négatifs
-        data[str(perdant)]["tokens"] = max(0, data[str(perdant)]["tokens"] - gain_tokens)
-        data[str(gagnant)]["tokens"] += gain_tokens
-
-
-        combat["résolu"] = True
-
-        save_data(data)
-
-        await interaction.response.send_message(
-            f"⚔️ Combat terminé !\n"
-            f"**Gagnant : <@{gagnant}>**\n"
-            f"Tokens gagnés : **{gain_tokens}**",
-            ephemeral=False
-        )
-
-
-@bot.tree.command(name="combat_voir", description="Voir les guerres en cours")
-async def combat_voir(interaction: discord.Interaction):
-    data = load_data()
-    combats = data.get("combats", {})
-
-    # Filtrer uniquement les guerres non résolues
-    combats_en_cours = {
-        cid: combat for cid, combat in combats.items()
-        if not combat["résolu"]
-    }
-
-    if not combats_en_cours:
-        return await interaction.response.send_message("Aucune guerre en cours.", ephemeral=True)
-
-    pages = []
-    for cid, combat in combats_en_cours.items():
-        embed = discord.Embed(
-            title=f"Guerre #{cid}",
-            description=(
-                f"Attaquant : <@{combat['attaquant']}>\n"
-                f"Cible : <@{combat['cible']}>\n"
-                f"Résolu : {'Oui' if combat['résolu'] else 'Non'}"
-            ),
-            color=discord.Color.red()
-        )
-        pages.append(embed)
-
-    view = PaginationView(pages, interaction.user)
-    await interaction.response.send_message(embed=pages[0], view=view)
-
-
-
-@tasks.loop(minutes=10)
-async def check_combats():
-    data = load_data()
-    combats = data.get("combats", {})
-
-    now = int(time.time())
-
-    for cid, combat in combats.items():
-        if combat["résolu"]:
-            continue
-
-        if combat["dragons_cible"]:
-            continue
-
-        if now - combat["timestamp"] >= 86400:  # 24h
-            points = calcul_points(combat["dragons_attaquant"])
-            gain = points // 4
-
-            perdant = combat["cible"]
-            gagnant = combat["attaquant"]
-
-            # Empêche les tokens négatifs
-            data[str(perdant)]["tokens"] = max(0, data[str(perdant)]["tokens"] - gain_tokens)
-            data[str(gagnant)]["tokens"] += gain_tokens
-
-            combat["résolu"] = True
-
-    save_data(data)
-
 
 
 
