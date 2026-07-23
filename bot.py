@@ -1661,7 +1661,7 @@ async def pay(interaction: discord.Interaction, membre: discord.Member, montant:
 @bot.tree.command(name="daily", description="Récupère ton revenu quotidien")
 async def daily(interaction: discord.Interaction):
 
-        user_id = interaction.user.id
+    user_id = interaction.user.id
     data = load_data()
     user_data = get_user_data(data, user_id)
 
