@@ -1661,10 +1661,7 @@ async def pay(interaction: discord.Interaction, membre: discord.Member, montant:
 @bot.tree.command(name="daily", description="Récupère ton revenu quotidien")
 async def daily(interaction: discord.Interaction):
 
-    # Empêche l'erreur Unknown interaction
-    await interaction.response.defer(ephemeral=False)
-
-    user_id = interaction.user.id
+        user_id = interaction.user.id
     data = load_data()
     user_data = get_user_data(data, user_id)
 
@@ -1676,6 +1673,10 @@ async def daily(interaction: discord.Interaction):
             "⏳ Tu as déjà récupéré ton daily aujourd'hui ! Reviens demain.",
             ephemeral=True
         )
+
+    # Empêche l'erreur Unknown interaction
+    await interaction.response.defer(ephemeral=False)
+
 
     job_level = user_data["job_level"]
     job_bonus = JOB_INCOME.get(job_level, 0)
