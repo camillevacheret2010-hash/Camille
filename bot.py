@@ -1669,7 +1669,7 @@ async def daily(interaction: discord.Interaction):
     today = datetime.now(tz).strftime("%Y-%m-%d")
 
     if user_data["last_daily"] == today:
-        return await interaction.followup.send(
+        return await interaction.response.send_message(
             "⏳ Tu as déjà récupéré ton daily aujourd'hui ! Reviens demain.",
             ephemeral=True
         )
