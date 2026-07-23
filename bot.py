@@ -165,7 +165,7 @@ DRAGONS = {
         "Parents : <:ombres:1516466733475692725> Dragon des ombres & <:vent:1516459149624606841> Dragon du vent"
     ),
     "Dragon d'orage": (
-        "<:orage:1516466828015177970> <:orage:1516466828015177970> Dragon d'orage\n"
+        "<:orage:1529925465593217024> Dragon d'orage\n"
         "Rareté : Commun\n"
         "Obtention : Hybride\n"
         "Parents : <:elec:1516458643435032787> Dragon électrique & <:vent:1516459149624606841> Dragon vent"
@@ -563,7 +563,7 @@ DRAGONCOLLEC = {
     },
 
     "Dragon d'orage": {
-        "emoji": "<:orage:1516466828015177970>",
+        "emoji": "<:orage:1529925465593217024>",
         "rarete": "Commun",
         "obtention": "Hybride",
         "parents": ["Dragon électrique", "Dragon de vent"]
