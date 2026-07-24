@@ -455,7 +455,7 @@ DRAGONS = {
     "Dragon de l'univers": (
         "<:univers:1516467318874439882> Dragon de l'univers\n"
         "Rareté : Unique\n"
-        "Obtention : Hybride (Posseder tous les dragons du serveur hors raté et divins au stade maximal ainsi que 10 noyaux de puissance)\n"
+        "Obtention : Hybride (Posseder tous les dragons du serveur hors raté et divins au stade maximal ainsi que 10 noyaux de puissance à la place d'une soupe aux épices)\n"
     ),
     "Dragon raté": (
         "<:rate:1516465121398882304> Dragon raté\n"
@@ -3029,6 +3029,20 @@ async def hybride(interaction: discord.Interaction, dragon: str):
     if not ok:
         await interaction.response.send_message(f"❌ {msg}", ephemeral=True)
         return
+
+
+    # Vérification spéciale : parents du Dragon de l'univers doivent être stade 6
+    if dragon == "Dragon de l'univers":
+        parents = DRAGONCOLLEC[dragon]["parents"]
+        for parent in parents:
+            if max(user_data["dragons"][parent]) < 6:
+                return await interaction.response.send_message(
+                    "❌ Pour créer le **Dragon de l'univers**, tous les parents doivent être **stade 6**.",
+                    ephemeral=True
+                )
+
+
+
 
     # Cas spécial : Dragon de l'univers (ne rate jamais)
     if dragon == "Dragon de l'univers":
