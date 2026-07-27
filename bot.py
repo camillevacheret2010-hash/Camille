@@ -56,16 +56,22 @@ FISHING_RODS = {
 }
 
 FISH_LOOT = [
-    ("🐟 Sardine", 70),
+    ("🐟 Sardine", 50),
+    ("<:carpe:1531391419854487712> Carpe", 15),
     ("🐠 Saumon", 20),
-    ("🦀 Crabe", 9),
+    ("🦀 Crabe", 8),
+    ("<:leviathan:1531391807861030914> Leviathan", 5),
+    ("<:botte:1531392077508640849> Botte", 1),
     ("🐡 Poisson d'or", 1)
 ]
 
 FISH_PRICES = {
+    "<:botte:1531392077508640849> Botte": 0,
     "🐟 Sardine": 500,
+    "<:carpe:1531391419854487712> Carpe": 1000,
     "🐠 Saumon": 2000,
     "🦀 Crabe": 5000,
+    "<:leviathan:1531391807861030914> Leviathan": 7500,
     "🐡 Poisson d'or": 10000
 }
 
