@@ -962,12 +962,6 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 async def on_ready():
     print("Bot allumé !")
     # Synchroniser les commandes
-    try:
-        #sinc
-        synced = await bot.tree.sync()
-        print(f"Commandes slash synchronisées : {len(synced)}")
-    except Exception as e:
-        print(e)
     data = load_data()
 
     # --- Initialisation du système de combat ---
