@@ -59,10 +59,10 @@ FISH_LOOT = [
     ("🐟 Sardine", 35),
     ("<:carpe:1531391419854487712> Carpe", 20),
     ("🐠 Saumon", 15),
-    ("<:poissonclown:1531585948628946954> poisson clown", 10)
+    ("<:poissonclown:1531585948628946954> poisson clown", 10),
     ("🦀 Crabe", 8),
     ("<:leviathan:1531391807861030914> Leviathan", 5),
-    ("<:poissonrouge:1531585970166566972> petit poisson rouge", 5)
+    ("<:poissonrouge:1531585970166566972> petit poisson rouge", 5),
     ("<:botte:1531392077508640849> Botte", 1),
     ("🐡 Poisson d'or", 1)
 ]
