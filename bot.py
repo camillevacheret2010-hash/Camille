@@ -3670,8 +3670,14 @@ def keep_alive():
     t = Thread(target=run)
     t.start()
 
+@bot.event
+async def on_disconnect():
+    print("Déconnecté de Discord, tentative de reconnexion…")
 
+@bot.event
+async def on_resumed():
+    print("Connexion Discord rétablie !")
 
 
 keep_alive()
-bot.run(os.getenv('DISCORD_TOKEN'))
+bot.run(os.getenv('DISCORD_TOKEN'), reconnect=True)
