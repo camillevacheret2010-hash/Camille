@@ -4,3 +4,4 @@ python-dotenv
 aiohttp
 pytz
 async-timeout
+flask
