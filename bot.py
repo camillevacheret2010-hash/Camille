@@ -3668,6 +3668,7 @@ def run():
 
 def keep_alive():
     t = Thread(target=run)
+    t.daemon = True
     t.start()
 
 @bot.event
@@ -3680,4 +3681,4 @@ async def on_resumed():
 
 
 keep_alive()
-bot.run(os.getenv('DISCORD_TOKEN'), reconnect=True)
+bot.run(os.getenv('DISCORD_TOKEN'), reconnect=True, heartbeat_timeout=60)
