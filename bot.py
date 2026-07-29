@@ -3622,6 +3622,37 @@ async def quetes(interaction: discord.Interaction):
 ID_SALON_GUERRE = 1498036546928902185
 
 
+@bot.event
+async def on_ready():
+    print("Bot prêt !")
+
+    # Si le fichier existe, on ne synchronise plus
+    if os.path.exists("synced.flag"):
+        print("Commandes déjà synchronisées, skip.")
+        return
+
+    # Sinon, on synchronise une seule fois
+    await bot.tree.sync()
+    print("Commandes synchronisées une fois.")
+
+    # On crée le fichier-flag
+    with open("synced.flag", "w") as f:
+        f.write("done")
+
+
+
+@bot.tree.command(name="export", description="Télécharge le fichier economy.json")
+async def export_json(interaction):
+    try:
+        await interaction.response.send_message(
+            file=discord.File("economy.json"),
+            ephemeral=True
+        )
+    except Exception as e:
+        await interaction.response.send_message(
+            f"Erreur : {e}",
+            ephemeral=True
+        )
 
 
 
