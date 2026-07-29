@@ -3681,4 +3681,4 @@ async def on_resumed():
 
 
 keep_alive()
-bot.run(os.getenv('DISCORD_TOKEN'), reconnect=True, heartbeat_timeout=60)
+bot.run(os.getenv('DISCORD_TOKEN'), reconnect=True)
