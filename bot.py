@@ -3501,7 +3501,7 @@ RARITY_COLORS = {
 def format_dragon_info(name, info):
     # Cas spéciaux
     if name == "Dragon de l'univers":
-        return f"{info['emoji']} **{name}** — Tous les dragons stade maximum"
+        return f"{info['emoji']} **{name}** — Tous les dragons stade maximum et 10 noyaux de puissance"
 
     if name == "Dragon raté":
         return f"{info['emoji']} **{name}** — Hybridation ratée"
@@ -3811,6 +3811,10 @@ async def laboratoire(interaction: discord.Interaction):
 def clean_hybrids(user_data):
     # On parcourt tous les dragons définis dans le Dracodex
     for name, info in DRAGONCOLLEC.items():
+
+        # Ignorer Dragon raté
+        if name == "Dragon raté":
+            continue
         # On ne touche qu'aux hybrides
         if info.get("obtention") != "Hybride":
             continue
