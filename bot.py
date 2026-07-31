@@ -3633,13 +3633,6 @@ async def relacher(interaction: discord.Interaction, dragon: str):
     user_data = get_user_data(data, interaction.user.id)
 
 
-    # Infos du dragon
-    info = DRAGONCOLLEC.get(dragon)
-    if not info:
-        return await interaction.followup.send(
-            "❌ Ce dragon n'existe pas dans le Dracodex.",
-            ephemeral=True
-        )
 
     rarete = info["rarete"]
     gain = RELEASE_REWARDS.get(rarete, 0)
