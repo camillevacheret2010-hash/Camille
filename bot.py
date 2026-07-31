@@ -2402,7 +2402,7 @@ class ConfirmationView(discord.ui.View):
 
         user_data["dragons"].setdefault(self.son_nom, []).append(self.son_stade)
         cible_data["dragons"].setdefault(self.ton_nom, []).append(self.ton_stade)
-
+        clean_hybrids(user_data)
         save_data(data)
 
         embed = discord.Embed(
@@ -2523,7 +2523,7 @@ class ConfirmationVenteView(discord.ui.View):
         # TRANSFERT D'ARGENT
         cible_data["money"] -= self.prix
         vendeur_data["money"] += self.prix
-
+        clean_hybrids(user_data)
         save_data(data)
 
         embed = discord.Embed(
@@ -2891,6 +2891,7 @@ async def hybride(interaction: discord.Interaction, dragon: str):
         remove_item(user_data, item_name, 10)
 
         user_data["dragons"].setdefault(dragon, []).append(1)
+        clean_hybrids(user_data)
         save_data(data)
 
         emoji = DRAGONCOLLEC[dragon]["emoji"]
@@ -3198,6 +3199,7 @@ async def hdv_remove(interaction: discord.Interaction, offer_id: str):
 
     # Retirer du HDV
     hdv_list.remove(offer)
+    clean_hybrids(user_data)
     save_data(data)
 
     await interaction.response.send_message(
@@ -3250,6 +3252,7 @@ async def hdv_buy(interaction: discord.Interaction, offer_id: str):
 
     # Retirer du HDV
     hdv_list.remove(offer)
+    clean_hybrids(user_data)
     save_data(data)
 
     await interaction.response.send_message(
@@ -3655,6 +3658,7 @@ async def relacher(interaction: discord.Interaction, dragon: str):
 
     # Retirer l'exemplaire précis
     user_data["dragons"][name].pop(index)
+    clean_hybrids(user_data)
 
     # Si plus aucun exemplaire → supprimer la clé
     if len(user_data["dragons"][name]) == 0:
@@ -3736,6 +3740,7 @@ class LabView(discord.ui.View):
 
         # Ajouter le dragon
         user_data["dragons"].append(dragon_name)
+        clean_hybrids(user_data)
         save_data(data)
 
         # Désactiver les boutons
@@ -3792,6 +3797,26 @@ async def laboratoire(interaction: discord.Interaction):
 
 
 
+def clean_hybrids(user_data):
+    hybrids = {}
+
+    # Parcourir tous les dragons
+    for name, stages in user_data["dragons"].items():
+        info = DRAGONCOLLEC.get(name)
+
+        # Si ce n'est pas un hybride → on ignore
+        if not info or info["obtention"] != "Hybride":
+            continue
+
+        # Trouver le stade maximum
+        max_stage = max(stages)
+
+        # Stocker le meilleur exemplaire
+        hybrids[name] = [max_stage]
+
+    # Réinjecter les hybrides nettoyés
+    for name, stages in hybrids.items():
+        user_data["dragons"][name] = stages
 
 
 
