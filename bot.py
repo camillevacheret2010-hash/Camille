@@ -63,7 +63,7 @@ FISH_LOOT = [
     ("🦀 Crabe", 10),
     ("<:leviathan:1531391807861030914> Leviathan", 5),
     ("<:poissonrouge:1531585970166566972> petit poisson rouge", 5),
-    ("<:fossile:1532657456092807319> Fossile de dragon, 5"),
+    ("<:fossile:1532657456092807319> Fossile de dragon", 5),
     ("<:botte:1531392077508640849> Botte", 1),
     ("🐡 Poisson d'or", 1)
 ]
@@ -2945,7 +2945,7 @@ async def hybride(interaction: discord.Interaction, dragon: str):
     # RÉUSSITE → Dragon hybride normal
     reset_parents_to_stage_1(user_data, dragon)
     user_data["dragons"].setdefault(dragon, []).append(1)
-
+    clean_hybrids(user_data)
     save_data(data)
     await complete_daily_quest(interaction.user.id, 6)
 
