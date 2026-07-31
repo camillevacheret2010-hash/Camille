@@ -3625,6 +3625,9 @@ RELEASE_REWARDS = {
 async def relacher(interaction: discord.Interaction, dragon: str):
 
     await interaction.response.defer(ephemeral=True)
+    name, stade, index = dragon.split(" | ")
+    stade = int(stade)
+    index = int(index)
 
     data = load_data()
     user_data = get_user_data(data, interaction.user.id)
@@ -3647,19 +3650,20 @@ async def relacher(interaction: discord.Interaction, dragon: str):
     rarete = info["rarete"]
     gain = RELEASE_REWARDS.get(rarete, 0)
 
-    # Retirer un exemplaire du dragon
-    if dragon not in user_data["dragons"]:
-        return await interaction.followup.send(
-            "❌ Tu ne possèdes pas ce dragon.",
-            ephemeral=True
-        )
+    # Vérifier possession
+    if name not in user_data["dragons"]:
+        return await interaction.followup.send("❌ Tu ne possèdes pas ce dragon.", ephemeral=True)
 
-    # Retirer un exemplaire
-    user_data["dragons"][dragon].pop()
+    # Vérifier index valide
+    if index >= len(user_data["dragons"][name]):
+        return await interaction.followup.send("❌ Cet exemplaire n'existe plus.", ephemeral=True)
+
+    # Retirer l'exemplaire
+    user_data["dragons"][name].pop(index)
 
     # Si plus aucun exemplaire → supprimer la clé
-    if len(user_data["dragons"][dragon]) == 0:
-        del user_data["dragons"][dragon]
+    if len(user_data["dragons"][name]) == 0:
+        del user_data["dragons"][name]
 
     user_data["money"] += gain
     # Chance de 10% d'obtenir une relique ancienne
@@ -3680,22 +3684,22 @@ async def relacher(interaction: discord.Interaction, dragon: str):
 
 
 
-# Autocomplete
 @relacher.autocomplete("dragon")
 async def relacher_autocomplete(interaction: discord.Interaction, current: str):
     data = load_data()
     user_data = get_user_data(data, interaction.user.id)
 
-    dragons = user_data["dragons"]
+    choices = []
 
-    # Filtrer selon ce que l'utilisateur tape
-    suggestions = [
-        app_commands.Choice(name=d, value=d)
-        for d in dragons
-        if current.lower() in d.lower()
-    ]
+    for name, stages in user_data["dragons"].items():
+        for index, stade in enumerate(stages):
+            label = f"{name} (Stade {stade}) #{index+1}"
+            value = f"{name} | {stade} | {index}"
+            if current.lower() in label.lower():
+                choices.append(app_commands.Choice(name=label, value=value))
 
-    return suggestions[:25]
+    return choices[:25]
+
 
 
 
