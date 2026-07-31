@@ -3745,7 +3745,12 @@ class LabView(discord.ui.View):
             user_data["inventory"].remove(cost_item)
 
         # Ajouter le dragon
-        user_data["dragons"].append(dragon_name)
+        # Ajouter le dragon hybride correctement
+        if dragon_name not in user_data["dragons"]:
+            user_data["dragons"][dragon_name] = [1]
+        else:
+            user_data["dragons"][dragon_name].append(1)
+
         clean_hybrids(user_data)
         save_data(data)
 
