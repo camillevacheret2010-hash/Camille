@@ -3798,25 +3798,26 @@ async def laboratoire(interaction: discord.Interaction):
 
 
 def clean_hybrids(user_data):
-    hybrids = {}
-
-    # Parcourir tous les dragons
-    for name, stages in user_data["dragons"].items():
-        info = DRAGONCOLLEC.get(name)
-
-        # Si ce n'est pas un hybride → on ignore
-        if not info or info["obtention"] != "Hybride":
+    # On parcourt tous les dragons définis dans le Dracodex
+    for name, info in DRAGONCOLLEC.items():
+        # On ne touche qu'aux hybrides
+        if info.get("obtention") != "Hybride":
             continue
 
-        # Trouver le stade maximum
+        # Si le joueur ne possède pas ce dragon → on ignore
+        if name not in user_data["dragons"]:
+            continue
+
+        stages = user_data["dragons"][name]
+
+        # Si pour une raison quelconque ce n'est pas une liste → on ignore
+        if not isinstance(stages, list) or not stages:
+            continue
+
+        # On garde uniquement le stade maximum
         max_stage = max(stages)
+        user_data["dragons"][name] = [max_stage]
 
-        # Stocker le meilleur exemplaire
-        hybrids[name] = [max_stage]
-
-    # Réinjecter les hybrides nettoyés
-    for name, stages in hybrids.items():
-        user_data["dragons"][name] = stages
 
 
 
