@@ -3573,6 +3573,15 @@ async def dracodex(interaction: discord.Interaction, rarete: str):
             super().__init__(timeout=120)
             self.index = 0
 
+        async def interaction_check(self, interaction: discord.Interaction):
+            if interaction.user.id != self.user_id:
+                await interaction.response.send_message(
+                    "❌ Ce dracodex ne t'appartient pas.",
+                    ephemeral=True
+                )
+                return False
+            return True
+
         @discord.ui.button(label="◀", style=discord.ButtonStyle.secondary)
         async def previous(self, interaction2, button):
             self.index = (self.index - 1) % len(pages)
@@ -3583,7 +3592,7 @@ async def dracodex(interaction: discord.Interaction, rarete: str):
             self.index = (self.index + 1) % len(pages)
             await interaction2.response.edit_message(embed=pages[self.index], view=self)
 
-    await interaction.response.send_message(embed=pages[0], view=DexView(), ephemeral=True)
+    await interaction.response.send_message(embed=pages[0], view=DexView(), ephemeral=False)
 
 
 @dracodex.autocomplete("rarete")
@@ -3697,6 +3706,16 @@ class LabView(discord.ui.View):
         super().__init__(timeout=120)
         self.user_id = user_id
 
+
+    async def interaction_check(self, interaction: discord.Interaction):
+        if interaction.user.id != self.user_id:
+            await interaction.response.send_message(
+                "❌ Ce laboratoire ne t'appartient pas.",
+                ephemeral=True
+            )
+            return False
+        return True
+
     async def craft_dragon(self, interaction, dragon_name, cost_item, cost_amount):
         data = load_data()
         user_data = get_user_data(data, self.user_id)
@@ -3762,7 +3781,7 @@ async def laboratoire(interaction: discord.Interaction):
 
     view = LabView(interaction.user.id)
 
-    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
+    await interaction.response.send_message(embed=embed, view=view, ephemeral=False)
 
 
 
