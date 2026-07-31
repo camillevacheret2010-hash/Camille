@@ -3638,8 +3638,20 @@ async def relacher(interaction: discord.Interaction, dragon: str):
     rarete = info["rarete"]
     gain = RELEASE_REWARDS.get(rarete, 0)
 
-    # Retirer le dragon
-    user_data["dragons"].remove(dragon)
+    # Retirer un exemplaire du dragon
+    if dragon not in user_data["dragons"]:
+        return await interaction.followup.send(
+            "❌ Tu ne possèdes pas ce dragon.",
+            ephemeral=True
+        )
+
+    # Retirer un exemplaire
+    user_data["dragons"][dragon].pop()
+
+    # Si plus aucun exemplaire → supprimer la clé
+    if len(user_data["dragons"][dragon]) == 0:
+        del user_data["dragons"][dragon]
+
     user_data["money"] += gain
     # Chance de 10% d'obtenir une relique ancienne
     if random.random() < 0.10:
