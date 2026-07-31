@@ -56,13 +56,14 @@ FISHING_RODS = {
 }
 
 FISH_LOOT = [
-    ("🐟 Sardine", 35),
+    ("🐟 Sardine", 28),
     ("<:carpe:1531391419854487712> Carpe", 20),
     ("🐠 Saumon", 15),
     ("<:poissonclown:1531585948628946954> poisson clown", 10),
-    ("🦀 Crabe", 8),
+    ("🦀 Crabe", 10),
     ("<:leviathan:1531391807861030914> Leviathan", 5),
     ("<:poissonrouge:1531585970166566972> petit poisson rouge", 5),
+    ("<:fossile:1532657456092807319> Fossile de dragon, 5"),
     ("<:botte:1531392077508640849> Botte", 1),
     ("🐡 Poisson d'or", 1)
 ]
@@ -99,379 +100,7 @@ RI_ROLE_IDS = {
 }
 
 
-DRAGONS = {
-    "Dragon de feu": (
-        "<:feu:1516458328715169883> Dragon de feu\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de poison": (
-        "<:poison:1516458574232948968> Dragon de poison\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de glace": (
-        "<:glace:1516458617211977890> Dragon de glace\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon électrique": (
-        "<:elec:1516458643435032787> Dragon électrique\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon d'eau": (
-        "<:eau:1516465397950582896> Dragon d'eau\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de sable": (
-        "<:sable:1516465432670900416> Dragon de sable\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon des ombres": (
-        "<:ombres:1516466733475692725> Dragon des ombres\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de lumière": (
-        "<:lumiere:1516468032900304946> Dragon de lumière\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de vent": (
-        "<:vent:1516459149624606841> Dragon de vent\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de pierre": (
-        "<:pierre:1516459120872394913> Dragon de pierre\n"
-        "Rareté : Commun\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon d'argile": (
-        "<:argile:1516465277129326732> Dragon d'argile\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:eau:1516465397950582896> Dragon d'eau & <:sable:1516465432670900416> Dragon de sable"
-    ),
-    "Dragon de cristal": (
-        "<:crystal:1516465235794591916> Dragon de cristal\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:pierre:1516459120872394913> Dragon de pierre & <:glace:1516458617211977890> Dragon de glace"
-    ),
-    "Dragon de lave": (
-        "<:lave:1516465317188993025> Dragon de lave\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:feu:1516458328715169883> Dragon de feu & <:pierre:1516459120872394913> Dragon de pierre"
-    ),
-    "Dragon spectral": (
-        "<:spectral:1516466639716221199> Dragon spectral\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:ombres:1516466733475692725> Dragon des ombres & <:vent:1516459149624606841> Dragon du vent"
-    ),
-    "Dragon d'orage": (
-        "<:orage:1529925465593217024> Dragon d'orage\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:elec:1516458643435032787> Dragon électrique & <:vent:1516459149624606841> Dragon vent"
-    ),
-    "Dragon des cavernes": (
-        "<:cavernes:1516467653219454986> Dragon des cavernes\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:pierre:1516459120872394913> Dragon de pierre & <:ombres:1516466733475692725> Dragon des ombres"
-    ),
-    "Dragon de poussière": (
-        "<:poussiere:1516466371830223013> Dragon de poussière\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:vent:1516459149624606841> Dragon de vent & <:pierre:1516459120872394913> Dragon de pierre"
-    ),
-    "Dragon des vagues": (
-        "<:vagues:1516497154934313101> Dragon des vagues\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:eau:1516465397950582896> Dragon d'eau & <:vent:1516459149624606841> Dragon de vent"
-    ),
-    "Dragon radioactif": (
-        "<:radioactif:1516468277251936457> Dragon radioactif\n"
-        "Rareté : Commun\n"
-        "Obtention : Hybride\n"
-        "Parents : <:poison:1516458574232948968> Dragon de poison & <:vent:1516459149624606841> Dragon de vent"
-    ),
-    "Dragon du soleil": (
-        "<:soleil:1516465538988114021> Dragon du soleil\n"
-        "Rareté : Rare\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de lune": (
-        "<:lune:1516465571187658904> Dragon de lune\n"
-        "Rareté : Rare\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de sang": (
-        "<:sang:1516466216330461305> Dragon de sang\n"
-        "Rareté : Rare\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon chromatique": (
-        "<:chromatique:1516465473632600174> Dragon chromatique\n"
-        "Rareté : Rare\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon corrompu": (
-        "<:corrompu:1516465727232544919> Dragon corrompu\n"
-        "Rareté : Rare\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon des cieux": (
-        "<:cieux:1516468067113369691> Dragon des cieux\n"
-        "Rareté : Rare\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon miroir": (
-        "<:miroir:1516467444326338732> Dragon miroir\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:crystal:1516465235794591916> Dragon de cristal & <:ombres:1516466733475692725> Dragon des ombres"
-    ),
-    "Dragon possedé": (
-        "<:possede:1516467205556932668> Dragon possedé\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:spectral:1516466639716221199> Dragon spectral & <:feu:1516458328715169883 Dragon de feu"
-    ),
-    "Dragon de métal": (
-        "<:metal:1516466265349292253> Dragon de métal\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:pierre:1516459120872394913> Dragon de pierre & <:crystal:1516465235794591916> Dragon de cristal"
-    ),
-    "Dragon d'obsidienne": (
-        "<:obsidienne:1516466517640876153> Dragon d'obsidienne\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:lave:1516465317188993025> Dragon de lave & <:eau:1516465397950582896> Dragon d'eau"
-    ),
-    "Dragon de terreur": (
-        "<:terreur:1516466238203629578> Dragon de terreur\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:spectral:1516466639716221199> Dragon spectral & <:ombres:1516466733475692725> Dragon des ombres"
-    ),
-    "Dragon de plante": (
-        "<:plante:1516465362768756787> Dragon de plante\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:argile:1516465277129326732> Dragon d'argile & <:eau:1516465397950582896> Dragon d'eau"
-    ),
-    "Dragon de la mer": (
-        "<:mer:1516467412516474981> Dragon de la mer\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:vagues:1516497154934313101> Dragon des vagues & <:vent:1516459149624606841> Dragon de vent"
-    ),
-    "Dragon de diamant": (
-        "<:diamant:1516468370445172756> Dragon de diamant\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:lave:1516465317188993025> Dragon de lave & <:crystal:1516465235794591916> Dragon de crystal"
-    ),
-    "Dragon des abysses": (
-        "<:abysses:1516467472193028116> Dragon des abysses\n"
-        "Rareté : Rare\n"
-        "Obtention : Hybride\n"
-        "Parents : <:ombres:1516466733475692725> Dragon des ombres & <:cavernes:1516467653219454986> Dragon des cavernes"
-    ),
-    "Grand Dragon Doré": (
-        "<:dor:1516465064259883238> Grand Dragon Doré\n"
-        "Rareté : Épique\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon d'automne": (
-        "<:automne:1516467039391322112> Dragon d'automne\n"
-        "Rareté : Épique\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon d'hiver": (
-        "<:hiver:1516467101366358110> Dragon d'hiver\n"
-        "Rareté : Épique\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon d'été": (
-        "<:ete:1516467133163507764> Dragon d'été\n"
-        "Rareté : Épique\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon de printemps": (
-        "<:printemps:1516467069003235579> Dragon de printemps\n"
-        "Rareté : Épique\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon musical": (
-        "<:musical:1516469012135936080> Dragon musical\n"
-        "Rareté : Épique\n"
-        "Obtention : Œuf"
-    ),
-    "Dragon détruit": (
-        "<:detruit:1516466796507431006> Dragon détruit\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:corrompu:1516465727232544919> Dragon corrompu & <:rate:1516465121398882304> Dragon raté"
-    ),
-    "Dragon de la nuit": (
-        "<:nuit:1516467758018068653> Dragon de la nuit\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:ombres:1516466733475692725> Dragon des ombres & <:lune:1516465571187658904> Dragon de lune"
-    ),
-    "Dragon mécanique": (
-        "<:mecanique:1516466450246799401> Dragon mécanique\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : Dragon de métal & Dragon éléctrique"
-    ),
-    "Dragon de rouille": (
-        "<:rouille:1516466486804353206> Dragon de rouille\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:metal:1516466265349292253> Dragon de métal & <:eau:1516465397950582896> Dragon d'eau"
-    ),
-    "Dragon champignon": (
-        "<:champignon:1516466761690648586> Dragon champignon\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:poison:1516458574232948968> Dragon de poison & <:plante:1516465362768756787> Dragon de plante"
-    ),
-    "Dragon pissenlit": (
-        "<:pissenlit:1516467168022237385> Dragon pissenlit\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:plante:1516465362768756787> Dragon de plante & <:vent:1516459149624606841> Dragon de vent"
-    ),
-    "Dragon d'améthyste": (
-        "<:amethyste:1516467723788357632> Dragon d'améthyste\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:crystal:1516465235794591916> Dragon de crystal & <:abysses:1516467472193028116> Dragon des abysses"
-    ),
-    "Dragon de fleur": (
-        "<:fleur:1516465875769753830> Dragon de fleur\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:plante:1516465362768756787> Dragon de plante & <:eau:1516465397950582896> Dragon d'eau"
-    ),
-    "Dragon de pouvoir": (
-        "<:pouvoir:1516467236666343535> Dragon de pouvoir\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:spectral:1516466639716221199> Dragon spectral & <:terreur:1516466238203629578> Dragon de terreur"
-    ),
-    "Dragon des nuages": (
-        "<:nuages:1516468120078913776> Dragon des nuages\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:cieux:1516468067113369691> Dragon des cieux & <:vent:1516459149624606841> Dragon de vent"
-    ),
-    "Dragon du crépuscule": (
-        "<:crepuscule:1516468179013210153> Dragon du crépuscule\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:cieux:1516468067113369691> Dragon des cieux & <:ombres:1516466733475692725> Dragon des ombres"
-    ),
-    "Dragon de l'aube": (
-        "<:aube:1516468215860039805> Dragon de l'aube\n"
-        "Rareté : Épique\n"
-        "Obtention : Hybride\n"
-        "Parents : <:cieux:1516468067113369691> Dragon des cieux & <:lumiere:1516468032900304946> Dragon de lumière"
-    ),
-    "Dragon ancestral": (
-        "<:ancestral:1516468148436734112> Dragon ancestral\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Œuf\n"
-    ),
-    "Dragon de corail": (
-        "<:corail:1516467347769262211> Dragon de corail\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:mer:1516467412516474981> Dragon de la mer & <:plante:1516465362768756787> Dragon de plante"
-    ),
-    "Dragon diabolique": (
-        "<:diabolique:1516530044938359074> Dragon diabolique\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:terreur:1516466238203629578> Dragon de terreur & <:sang:1516466216330461305> Dragon de sang"
-    ),
-    "Dragon arc-en-ciel": (
-        "<:arc_en_ciel:1516466111602757733> Dragon arc-en-ciel\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:miroir:1516467444326338732> Dragon miroir & <:chromatique:1516465473632600174> Dragon chromatique"
-    ),
-    "Dragon caméléon": (
-        "<:cameleon:1516465832345993431> Dragon caméléon\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:chromatique:1516465473632600174> Dragon chromatique & <:fleur:1516465875769753830> Dragon de fleur"
-    ),
-    "Dragon éclipse": (
-        "<:eclipse:1516466858104979537> Dragon éclipse\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:soleil:1516465538988114021> Dragon de soleil & <:lune:1516465571187658904> Dragon de lune"
-    ),
-    "Dragon des aurores": (
-        "<:aurores:1516467798430191646> Dragon des aurores\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:nuit:1516467758018068653> Dragon de nuit & <:soleil:1516465538988114021> Dragon de soleil"
-    ),
-    "Dragon des étoiles": (
-        "<:etoile:1516468341659799813> Dragon des étoiles\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:cieux:1516468067113369691> Dragon des cieux & <:soleil:1516465538988114021> Dragon de soleil"
-    ),
-    "Dragon compacté": (
-        "<:compacte:1517138088298676264> Dragon compacté\n"
-        "Rareté : Légendaire\n"
-        "Obtention : Hybride\n"
-        "Parents : <:rate:1516465121398882304> Dragon raté ×15"
-    ),
-    "Dragon de l'espace": (
-        "<:espace:1516467268165304491> Dragon de l'espace\n"
-        "Rareté : Divin\n"
-        "Obtention : Hybride\n"
-        "Parents : <:eclipse:1516466858104979537> Dragon éclipse & <:arc_en_ciel:1516466111602757733> Dragon arc-en-ciel"
-    ),
-    "Dragon du temps": (
-        "<:temps:1516467293037662321> Dragon du temps\n"
-        "Rareté : Divin\n"
-        "Obtention : Hybride\n"
-        "Parents : <:ete:1516467133163507764> Dragon d'été & <:automne:1516467039391322112> Dragon d'automne & <:hiver:1516467101366358110> Dragon d'hiver &\n"
-        "<:printemps:1516467069003235579> Dragon de printemps"
-    ),
-    "Dragon des galaxies": (
-        "<:galaxie:1516468246247641320> Dragon des galaxies\n"
-        "Rareté : Divin\n"
-        "Obtention : Hybride\n"
-        "Parents : <:etoile:1516468341659799813> Dragon des étoiles & <:lune:1516465571187658904> Dragon de la lune & <:soleil:1516465538988114021> Dragon de soleil"
-    ),
-    "Dragon de l'univers": (
-        "<:univers:1516467318874439882> Dragon de l'univers\n"
-        "Rareté : Unique\n"
-        "Obtention : Hybride (Posseder tous les dragons du serveur hors raté et divins au stade maximal ainsi que 10 noyaux de puissance à la place d'une soupe aux épices)\n"
-    ),
-    "Dragon raté": (
-        "<:rate:1516465121398882304> Dragon raté\n"
-        "Obtention : Hybridation raté (1 chance sur 5)\n"
-    )
-}
+
 
 DRAGONCOLLEC = {
     "Dragon de feu": {
@@ -505,15 +134,15 @@ DRAGONCOLLEC = {
     "Dragon d'eau": {
         "emoji": "<:eau:1516465397950582896>",
         "rarete": "Commun",
-        "obtention": "Œuf",
-        "parents": None
+        "obtention": "Hybride",
+        "parents": ["Dragon de feu", "Dragon de glace"]
     },
 
     "Dragon de sable": {
         "emoji": "<:sable:1516465432670900416>",
         "rarete": "Commun",
-        "obtention": "Œuf",
-        "parents": None
+        "obtention": "Hybride",
+        "parents": ["Dragon de pierre", "Dragon de vent"]
     },
 
     "Dragon des ombres": {
@@ -645,15 +274,15 @@ DRAGONCOLLEC = {
     "Dragon des cieux": {
         "emoji": "<:cieux:1516468067113369691>",
         "rarete": "Rare",
-        "obtention": "Œuf",
-        "parents": None
+        "obtention": "Hybride",
+        "parents": ["Dragon des nuages", "Dragon de vent"]
     },
 
     "Dragon miroir": {
         "emoji": "<:miroir:1516467444326338732>",
         "rarete": "Rare",
         "obtention": "Hybride",
-        "parents": ["Dragon de cristal", "Dragon des ombres"]
+        "parents": ["Dragon de cristal", "Dragon du reflet"]
     },
 
     "Dragon possédé": {
@@ -756,7 +385,7 @@ DRAGONCOLLEC = {
 
     "Dragon détruit": {
         "emoji": "<:detruit:1516466796507431006>",
-        "rarete": "Épique",
+        "rarete": "Rare",
         "obtention": "Hybride",
         "parents": ["Dragon corrompu", "Dragon raté"]
     },
@@ -770,14 +399,14 @@ DRAGONCOLLEC = {
 
     "Dragon mécanique": {
         "emoji": "<:mecanique:1516466450246799401>",
-        "rarete": "Épique",
+        "rarete": "Rare",
         "obtention": "Hybride",
         "parents": ["Dragon de métal", "Dragon électrique"]
     },
 
     "Dragon de rouille": {
         "emoji": "<:rouille:1516466486804353206>",
-        "rarete": "Épique",
+        "rarete": "Rare",
         "obtention": "Hybride",
         "parents": ["Dragon de métal", "Dragon d'eau"]
     },
@@ -819,9 +448,9 @@ DRAGONCOLLEC = {
 
     "Dragon des nuages": {
         "emoji": "<:nuages:1516468120078913776>",
-        "rarete": "Épique",
+        "rarete": "Rare",
         "obtention": "Hybride",
-        "parents": ["Dragon des cieux", "Dragon de vent"]
+        "parents": ["Dragon de vapeur", "Dragon d'eau"]
     },
 
     "Dragon du crépuscule": {
@@ -922,6 +551,216 @@ DRAGONCOLLEC = {
         "parents": ["Dragon des étoiles", "Dragon de la lune", "Dragon du soleil"]
     },
 
+    "Dragon des cauchemars": {
+        "emoji": "<:cauchemars:1532313464117264484>",
+        "rarete": "Légendaire",
+        "obtention": "Hybride",
+        "parents": ["Dragon de la nuit", "Dragon de terreur"]
+    },
+
+    "Dragon des rêves": {
+        "emoji": "<:reves:1532312973060608050>",
+        "rarete": "Légendaire",
+        "obtention": "Hybride",
+        "parents": ["Dragon de la nuit", "Dragon chromatique"]
+    },
+
+    "Dragon des cendres": {
+        "emoji": "<:cendres:1532313000286097488>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de feu", "Dragon des ombres"]
+    },
+
+    "Dragon surchargé": {
+        "emoji": "<:surcharge:1532313020473020637>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de feu", "Dragon électrique"]
+    },
+
+    "Dragon de chaleur": {
+        "emoji": "<:chaleur:1532313039460765826>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de feu", "Dragon de lumière"]
+    },
+
+    "Dragon antique": {
+        "emoji": "<:antique:1532313054853988483>",
+        "rarete": "Divin",
+        "obtention": "Hybride",
+        "parents": ["Dragon fossilisé", "Dragon ancestral"]
+    },
+
+    "Dragon de magnétite": {
+        "emoji": "<:magnetite:1532313084150939829>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de pierre", "Dragon électrique"]
+    },
+
+    "Dragon de vapeur": {
+        "emoji": "<:vapeur:1532313099095248916>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon d'eau", "Dragon de vent"]
+    },
+
+    "Dragon des éclairs": {
+        "emoji": "<:eclair:1532313113477779636>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de lumière", "Dragon électrique"]
+    },
+
+    "Dragon de neige": {
+        "emoji": "<:neige:1532313126463340695>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de glace", "Dragon de vent"]
+    },
+
+    "Dragon de gel": {
+        "emoji": "<:gel:1532313142112288808>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon d'eau", "Dragon de glace"]
+    },
+
+    "Dragon de givre": {
+        "emoji": "<:givre:1532313156804677753>",
+        "rarete": "Rare",
+        "obtention": "Hybride",
+        "parents": ["Dragon de gel", "Dragon de pierre"]
+    },
+
+    "Dragon du reflet": {
+        "emoji": "<:reflet:1532313175909990564>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon d'eau", "Dragon de lumière"]
+    },
+
+    "Dragon de terre": {
+        "emoji": "<:terre:1532313190514557008>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon de pierre", "Dragon d'eau"]
+    },
+
+    "Dragon de pluie": {
+        "emoji": "<:pluie:1532313222605176923>",
+        "rarete": "Rare",
+        "obtention": "Hybride",
+        "parents": ["Dragon des nuages", "Dragon d'eau"]
+    },
+
+    "Dragon de venin": {
+        "emoji": "<:venin:1532313238195146812>",
+        "rarete": "Commun",
+        "obtention": "Hybride",
+        "parents": ["Dragon d'eau", "Dragon de poison"]
+    },
+
+    "Dragon des icebergs": {
+        "emoji": "<:iceberg:1532313250899689612>",
+        "rarete": "Rare",
+        "obtention": "Hybride",
+        "parents": ["Dragon de glace", "Dragon des vagues"]
+    },
+
+    "Dragon d'uranium": {
+        "emoji": "<:uranium:1532313265554854009>",
+        "rarete": "Rare",
+        "obtention": "Hybride",
+        "parents": ["Dragon de pierre", "Dragon radioactif"]
+    },
+
+    "Dragon tropical": {
+        "emoji": "<:tropical:1532313281618903101>",
+        "rarete": "Rare",
+        "obtention": "Hybride",
+        "parents": ["Dragon de chaleur", "Dragon d'eau"]
+    },
+
+    "Dragon des tempêtes": {
+        "emoji": "<:tempete:1532313297209131038>",
+        "rarete": "Rare",
+        "obtention": "Hybride",
+        "parents": ["Dragon des vagues", "Dragon d'orage"]
+    },
+
+    "Dragon fossilisé": {
+        "emoji": "<:fossiles:1532313307925450792>",
+        "rarete": "Légendaire",
+        "obtention": "Hybride",
+        "parents": None
+    },
+
+    "Dragon de grêle": {
+        "emoji": "<:grele:1532313321116663808>",
+        "rarete": "Épique",
+        "obtention": "Hybride",
+        "parents": ["Dragon de pluie", "Dragon de glace"]
+    },
+
+    "Dragon de rubis": {
+        "emoji": "<:rubis:1532313335914041415>",
+        "rarete": "Épique",
+        "obtention": "Hybride",
+        "parents": ["Dragon de diamant", "Dragon de feu"]
+    },
+
+    "Dragon d'emeraudes": {
+        "emoji": "<:emeraudes:1532313346898919485>",
+        "rarete": "Épique",
+        "obtention": "Hybride",
+        "parents": ["Dragon de poison", "Dragon de diamant"]
+    },
+
+    "Dragon de saphir": {
+        "emoji": "<:saphir:1532313358873792512>",
+        "rarete": "Épique",
+        "obtention": "Hybride",
+        "parents": ["Dragon de diamant", "Dragon d'eau"]
+    },
+
+    "Dragon du blizzard": {
+        "emoji": "<:blizzard:1532313382991167658>",
+        "rarete": "Épique",
+        "obtention": "Hybride",
+        "parents": ["Dragon de glace", "Dragon des nuages"]
+    },
+
+    "Dragon souverain": {
+        "emoji": "<:souverain:1532313402448285826>",
+        "rarete": "Légendaire",
+        "obtention": "Hybride",
+        "parents": ["Dragon de pouvoir", "Grand Dragon Doré"]
+    },
+
+    "Dragon du néant": {
+        "emoji": "<:neant:1532313423323594762>",
+        "rarete": "Divin",
+        "obtention": "Hybride",
+        "parents": ["Dragon de l'espace", "Dragon du temps"]
+    },
+
+    "Dragon prismatique": {
+        "emoji": "<:prismatique:1532313436313227345>",
+        "rarete": "Légendaire",
+        "obtention": "Hybride",
+        "parents": ["Dragon de diamant", "Dragon arc-en-ciel"]
+    },
+
+    "Dragon oublié": {
+        "emoji": "<:oublie:1532656671359238246>",
+        "rarete": "Légendaire",
+        "obtention": "Hybride",
+        "parents": None
+    },
+
     "Dragon de l'univers": {
         "emoji": "<:univers:1516467318874439882>",
         "rarete": "Unique",
@@ -942,7 +781,13 @@ DRAGONCOLLEC = {
             "Dragon de pouvoir", "Dragon des nuages", "Dragon du crépuscule", "Dragon de l'aube",
             "Dragon ancestral", "Dragon de corail", "Dragon diabolique", "Dragon arc-en-ciel",
             "Dragon caméléon", "Dragon éclipse", "Dragon des aurores", "Dragon des étoiles",
-            "Dragon compacté"
+            "Dragon compacté", "Dragon des cauchemars", "Dragon des rêves", "Dragon des cendres",
+            "Dragon surchargé", "Dragon de chaleur", "Dragon de magnétite",
+            "Dragon de vapeur", "Dragon des éclairs", "Dragon de neige", "Dragon de gel",
+            "Dragon de givre", "Dragon du reflet", "Dragon de terre", "Dragon de pluie", "Dragon de venin",
+            "Dragon des icebergs", "Dragon d'uranium", "Dragon tropical", "Dragon des tempêtes",
+            "Dragon des fossiles", "Dragon de grêle", "Dragon de rubis", "Dragon d'emeraudes",
+            "Dragon de saphir", "Dragon du blizzard", "Dragon souverain", "Dragon prismatique", "Dragon oublié"
         ]
     },
 
@@ -1993,27 +1838,6 @@ async def removeitem(interaction: discord.Interaction, membre: discord.Member, o
     await interaction.response.send_message(embed=embed)
 
 
-# /dracodex
-
-@bot.tree.command(name="dracodex", description="Affiche les informations d'un dragon")
-@discord.app_commands.autocomplete(dragon=autocomplete_dragons)
-async def dracodex(interaction: discord.Interaction, dragon: str):
-
-    if dragon not in DRAGONS:
-        return await interaction.response.send_message(
-            "❌ Ce dragon n'existe pas dans le Dracodex.",
-            ephemeral=True
-        )
-
-    description = DRAGONS[dragon]
-
-    embed = discord.Embed(
-        title="Dracodex",
-        description=description,
-        color=discord.Color.orange()
-    )
-
-    await interaction.response.send_message(embed=embed)
 
 
 # /ferme
@@ -2079,7 +1903,11 @@ async def pêche(interaction: discord.Interaction):
 
     # Tirage du poisson
     fish = get_random_fish()
-    user_data["fish_inventory"].append(fish)
+    
+    if "Fossile" in fish:
+        user_data["inventory"].append(fish)   # inventaire des objets de boutique
+    else:
+        user_data["fish_inventory"].append(fish)
     user_data["last_fish"] = now
     save_data(data)
     if fish in ["🦀 Crabe", "🐡 Poisson d'or"]:
@@ -3653,6 +3481,302 @@ async def export_json(interaction):
             f"Erreur : {e}",
             ephemeral=True
         )
+
+
+
+
+
+RARITY_COLORS = {
+    "Commun": discord.Color.green(),
+    "Rare": discord.Color.blue(),
+    "Épique": discord.Color.purple(),
+    "Légendaire": discord.Color.gold(),
+    "Divin": discord.Color.red(),
+    "Unique": discord.Color.from_rgb(255, 215, 0)
+}
+
+def format_dragon_info(name, info):
+    # Cas spéciaux
+    if name == "Dragon de l'univers":
+        return f"{info['emoji']} **{name}** — Tous les dragons stade maximum"
+
+    if name == "Dragon raté":
+        return f"{info['emoji']} **{name}** — Hybridation ratée"
+
+    if name == "Dragon fossilisé":
+        return f"{info['emoji']} **{name}** — 5 Fossiles"
+
+    if name == "Dragon oublié":
+        return f"{info['emoji']} **{name}** — 5 reliques anciennes"
+
+    # Cas normal
+    if info["obtention"] == "Œuf":
+        return f"{info['emoji']} **{name}** — Œuf"
+
+    if info["parents"]:
+        parents = " + ".join(info["parents"])
+        return f"{info['emoji']} **{name}** — Parents : {parents}"
+
+    return f"{info['emoji']} **{name}** — Inconnu"
+
+
+@bot.tree.command(name="dracodex", description="Affiche les dragons par rareté")
+@app_commands.describe(rarete="commun / rare / épique / légendaire / divin / unique")
+async def dracodex(interaction: discord.Interaction, rarete: str):
+
+    rarete = rarete.capitalize()
+
+    if rarete not in RARITY_COLORS:
+        return await interaction.response.send_message(
+            "❌ Rareté invalide. Choisis : commun, rare, épique, légendaire, divin, unique.",
+            ephemeral=True
+        )
+
+    # Filtrer les dragons
+    dragons = [
+        (name, info)
+        for name, info in DRAGONCOLLEC.items()
+        if info["rarete"].lower() == rarete.lower()
+    ]
+
+    if not dragons:
+        return await interaction.response.send_message(
+            f"❌ Aucun dragon trouvé pour la rareté **{rarete}**.",
+            ephemeral=True
+        )
+
+    # Pagination
+    pages = []
+    page_size = 10
+
+    for i in range(0, len(dragons), page_size):
+        chunk = dragons[i:i + page_size]
+
+        description = "\n".join(format_dragon_info(name, info) for name, info in chunk)
+
+        embed = discord.Embed(
+            title=f"📘 Dracodex — {rarete}",
+            description=description,
+            color=RARITY_COLORS[rarete]
+        )
+
+        embed.set_footer(text=f"Page {len(pages)+1}/{(len(dragons)-1)//page_size+1}")
+        pages.append(embed)
+
+    # Si une seule page → simple envoi
+    if len(pages) == 1:
+        return await interaction.response.send_message(embed=pages[0], ephemeral=True)
+
+    # Sinon → pagination avec boutons
+    class DexView(discord.ui.View):
+        def __init__(self):
+            super().__init__(timeout=120)
+            self.index = 0
+
+        @discord.ui.button(label="◀", style=discord.ButtonStyle.secondary)
+        async def previous(self, interaction2, button):
+            self.index = (self.index - 1) % len(pages)
+            await interaction2.response.edit_message(embed=pages[self.index], view=self)
+
+        @discord.ui.button(label="▶", style=discord.ButtonStyle.secondary)
+        async def next(self, interaction2, button):
+            self.index = (self.index + 1) % len(pages)
+            await interaction2.response.edit_message(embed=pages[self.index], view=self)
+
+    await interaction.response.send_message(embed=pages[0], view=DexView(), ephemeral=True)
+
+
+@dracodex.autocomplete("rarete")
+async def dracodex_autocomplete(interaction: discord.Interaction, current: str):
+    options = ["commun", "rare", "épique", "légendaire", "divin", "unique"]
+
+    return [
+        app_commands.Choice(name=r.capitalize(), value=r)
+        for r in options
+        if current.lower() in r.lower()
+    ][:25]
+
+
+
+
+
+
+RELEASE_REWARDS = {
+    "Commun": 1000,
+    "Rare": 2500,
+    "Épique": 5000,
+    "Légendaire": 7500,
+    "Divin": 10000,
+    "Unique": 30000
+}
+
+
+@bot.tree.command(name="relacher", description="Relâcher un dragon de ta tanière")
+@app_commands.describe(dragon="Choisis le dragon à relâcher")
+async def relacher(interaction: discord.Interaction, dragon: str):
+
+    await interaction.response.defer(ephemeral=True)
+
+    data = load_data()
+    user_data = get_user_data(data, interaction.user.id)
+
+    # Vérifier possession
+    if dragon not in user_data["dragons"]:
+        return await interaction.followup.send(
+            "❌ Tu ne possèdes pas ce dragon.",
+            ephemeral=True
+        )
+
+    # Infos du dragon
+    info = DRAGONCOLLEC.get(dragon)
+    if not info:
+        return await interaction.followup.send(
+            "❌ Ce dragon n'existe pas dans le Dracodex.",
+            ephemeral=True
+        )
+
+    rarete = info["rarete"]
+    gain = RELEASE_REWARDS.get(rarete, 0)
+
+    # Retirer le dragon
+    user_data["dragons"].remove(dragon)
+    user_data["money"] += gain
+    # Chance de 10% d'obtenir une relique ancienne
+    if random.random() < 0.10:
+        user_data["inventory"].append("🧭 Relique ancienne")
+        relic_msg = "\n🧭 Tu as trouvé une **Relique ancienne** !"
+    else:
+        relic_msg = ""
+
+    save_data(data)
+
+    await interaction.followup.send(
+        f"🕊️ Tu as relâché **{info['emoji']} {dragon}**.\n"
+        f"💰 Tu gagnes **{gain} pièces** grâce à sa rareté **{rarete}**."
+        f"{relic_msg}",
+        ephemeral=True
+    )
+
+
+
+# Autocomplete
+@relacher.autocomplete("dragon")
+async def relacher_autocomplete(interaction: discord.Interaction, current: str):
+    data = load_data()
+    user_data = get_user_data(data, interaction.user.id)
+
+    dragons = user_data["dragons"]
+
+    # Filtrer selon ce que l'utilisateur tape
+    suggestions = [
+        app_commands.Choice(name=d, value=d)
+        for d in dragons
+        if current.lower() in d.lower()
+    ]
+
+    return suggestions[:25]
+
+
+
+
+
+class LabView(discord.ui.View):
+    def __init__(self, user_id):
+        super().__init__(timeout=120)
+        self.user_id = user_id
+
+    async def craft_dragon(self, interaction, dragon_name, cost_item, cost_amount):
+        data = load_data()
+        user_data = get_user_data(data, self.user_id)
+
+        # Vérifier ressources
+        if user_data["inventory"].count(cost_item) < cost_amount:
+            return await interaction.response.send_message(
+                f"❌ Tu n'as pas assez de **{cost_item}**.\n"
+                f"Il faut **{cost_amount}** pour créer **{dragon_name}**.",
+                ephemeral=True
+            )
+
+        # Retirer les ressources
+        for _ in range(cost_amount):
+            user_data["inventory"].remove(cost_item)
+
+        # Ajouter le dragon
+        user_data["dragons"].append(dragon_name)
+        save_data(data)
+
+        # Désactiver les boutons
+        for child in self.children:
+            child.disabled = True
+
+        await interaction.response.edit_message(
+            content=f"🧪 **Création réussie !**\nTu as obtenu **{DRAGONCOLLEC[dragon_name]['emoji']} {dragon_name}**.",
+            view=self
+        )
+
+    @discord.ui.button(label="🦴 Créer Dragon fossilisé", style=discord.ButtonStyle.primary)
+    async def fossil_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await self.craft_dragon(
+            interaction,
+            "Dragon fossilisé",
+            "<:fossile:1532657456092807319> Fossile de dragon",
+            5
+        )
+
+    @discord.ui.button(label="🧭 Créer Dragon oublié", style=discord.ButtonStyle.secondary)
+    async def relic_button(self, interaction: discord.Interaction, button: discord.ui.Button):
+        await self.craft_dragon(
+            interaction,
+            "Dragon oublié",
+            "🧭 Relique ancienne",
+            5
+        )
+
+
+@bot.tree.command(name="laboratoire", description="Créer des dragons spéciaux grâce à vos ressources")
+async def laboratoire(interaction: discord.Interaction):
+
+    embed = discord.Embed(
+        title="🧪 Laboratoire draconique",
+        description=(
+            "Bienvenue dans le laboratoire !\n\n"
+            "Tu peux créer :\n"
+            "🦴 **Dragon fossilisé** — nécessite **5 Fossiles**\n"
+            "🧭 **Dragon oublié** — nécessite **5 Reliques anciennes**\n\n"
+            "Choisis une option ci-dessous."
+        ),
+        color=discord.Color.dark_teal()
+    )
+
+    view = LabView(interaction.user.id)
+
+    await interaction.response.send_message(embed=embed, view=view, ephemeral=True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 from flask import Flask
 from threading import Thread
