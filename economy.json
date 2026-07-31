@@ -1,16 +1,17 @@
 {
     "1119591730577162261": {
-        "money": 199585,
+        "money": 199855,
         "boost": 3,
         "job_level": 6,
         "last_daily": "2026-07-31",
         "inventory": [
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
-            "🐐 Chèvre"
+            "🐐 Chèvre",
+            "<:fossile:1532657456092807319> Fossile de dragon"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1785486206,
+        "last_fish": 1785492092,
         "fish_inventory": [],
         "dragons": {
             "Dragon de poison": [
@@ -733,12 +734,13 @@
         }
     },
     "1295437098836295681": {
-        "money": 123266,
+        "money": 134296,
         "boost": 1,
         "job_level": 6,
-        "last_daily": "2026-07-30",
+        "last_daily": "2026-07-31",
         "inventory": [
             "<:oeuf_de_dragon_epique:1516064792400629802> Œuf de dragon épique",
+            "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre",
@@ -753,8 +755,10 @@
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1785447579,
-        "fish_inventory": [],
+        "last_fish": 1785492133,
+        "fish_inventory": [
+            "<:carpe:1531391419854487712> Carpe"
+        ],
         "dragons": {},
         "tokens": 11,
         "progress_quests": {
@@ -935,7 +939,7 @@
         }
     },
     "1479480336944468061": {
-        "money": 36006,
+        "money": 36096,
         "boost": 3,
         "job_level": 6,
         "last_daily": "2026-07-31",
@@ -1969,14 +1973,16 @@
         }
     },
     "1151918455222706288": {
-        "money": 26315,
+        "money": 27315,
         "boost": 3,
         "job_level": 1,
-        "last_daily": "2026-07-30",
-        "inventory": [],
+        "last_daily": "2026-07-31",
+        "inventory": [
+            "<:fossile:1532657456092807319> Fossile de dragon"
+        ],
         "farm": false,
         "fishing_rod": 1,
-        "last_fish": 1785447747,
+        "last_fish": 1785492126,
         "fish_inventory": [],
         "dragons": {
             "Dragon de sang": [

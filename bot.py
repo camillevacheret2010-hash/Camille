@@ -3568,17 +3568,18 @@ async def dracodex(interaction: discord.Interaction, rarete: str):
 
     # Si une seule page → simple envoi
     if len(pages) == 1:
-        return await interaction.response.send_message(embed=pages[0], ephemeral=True)
+        return await interaction.response.send_message(embed=pages[0])
 
     # Sinon → pagination avec boutons
     class DexView(discord.ui.View):
-        def __init__(self):
+        def __init__(self, user_id):
             super().__init__(timeout=120)
+            self.user_id = user_id
             self.index = 0
 
-        async def interaction_check(self, interaction: discord.Interaction):
-            if interaction.user.id != self.user_id:
-                await interaction.response.send_message(
+        async def interaction_check(self, interaction2: discord.Interaction):
+            if interaction2.user.id != self.user_id:
+                await interaction2.response.send_message(
                     "❌ Ce dracodex ne t'appartient pas.",
                     ephemeral=True
                 )
@@ -3595,7 +3596,8 @@ async def dracodex(interaction: discord.Interaction, rarete: str):
             self.index = (self.index + 1) % len(pages)
             await interaction2.response.edit_message(embed=pages[self.index], view=self)
 
-    await interaction.response.send_message(embed=pages[0], view=DexView(), ephemeral=False)
+    # ENVOI NON-ÉPHÉMÈRE + PASSAGE DE L’ID
+    await interaction.response.send_message(embed=pages[0], view=DexView(interaction.user.id))
 
 
 @dracodex.autocomplete("rarete")
@@ -3607,6 +3609,10 @@ async def dracodex_autocomplete(interaction: discord.Interaction, current: str):
         for r in options
         if current.lower() in r.lower()
     ][:25]
+
+
+
+
 
 
 
