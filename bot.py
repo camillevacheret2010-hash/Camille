@@ -3625,6 +3625,8 @@ RELEASE_REWARDS = {
 async def relacher(interaction: discord.Interaction, dragon: str):
 
     await interaction.response.defer(ephemeral=True)
+
+    # Décomposer le choix
     name, stade, index = dragon.split(" | ")
     stade = int(stade)
     index = int(index)
@@ -3632,27 +3634,35 @@ async def relacher(interaction: discord.Interaction, dragon: str):
     data = load_data()
     user_data = get_user_data(data, interaction.user.id)
 
-
-
-    rarete = info["rarete"]
-    gain = RELEASE_REWARDS.get(rarete, 0)
-
-    # Vérifier possession
+    # Vérifier possession (CORRECT)
     if name not in user_data["dragons"]:
-        return await interaction.followup.send("❌ Tu ne possèdes pas ce dragon.", ephemeral=True)
+        return await interaction.followup.send(
+            "❌ Tu ne possèdes pas ce dragon.",
+            ephemeral=True
+        )
 
     # Vérifier index valide
     if index >= len(user_data["dragons"][name]):
-        return await interaction.followup.send("❌ Cet exemplaire n'existe plus.", ephemeral=True)
+        return await interaction.followup.send(
+            "❌ Cet exemplaire n'existe plus.",
+            ephemeral=True
+        )
 
-    # Retirer l'exemplaire
+    # Infos du dragon (CORRECT)
+    info = DRAGONCOLLEC[name]
+    rarete = info["rarete"]
+    gain = RELEASE_REWARDS.get(rarete, 0)
+
+    # Retirer l'exemplaire précis
     user_data["dragons"][name].pop(index)
 
     # Si plus aucun exemplaire → supprimer la clé
     if len(user_data["dragons"][name]) == 0:
         del user_data["dragons"][name]
 
+    # Gain d'argent
     user_data["money"] += gain
+
     # Chance de 10% d'obtenir une relique ancienne
     if random.random() < 0.10:
         user_data["inventory"].append("🧭 Relique ancienne")
@@ -3663,11 +3673,12 @@ async def relacher(interaction: discord.Interaction, dragon: str):
     save_data(data)
 
     await interaction.followup.send(
-        f"🕊️ Tu as relâché **{info['emoji']} {dragon}**.\n"
+        f"🕊️ Tu as relâché **{info['emoji']} {name}** (Stade {stade}).\n"
         f"💰 Tu gagnes **{gain} pièces** grâce à sa rareté **{rarete}**."
         f"{relic_msg}",
         ephemeral=True
     )
+
 
 
 
