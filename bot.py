@@ -3632,12 +3632,6 @@ async def relacher(interaction: discord.Interaction, dragon: str):
     data = load_data()
     user_data = get_user_data(data, interaction.user.id)
 
-    # Vérifier possession
-    if dragon not in user_data["dragons"]:
-        return await interaction.followup.send(
-            "❌ Tu ne possèdes pas ce dragon.",
-            ephemeral=True
-        )
 
     # Infos du dragon
     info = DRAGONCOLLEC.get(dragon)
