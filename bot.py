@@ -786,7 +786,7 @@ DRAGONCOLLEC = {
             "Dragon de vapeur", "Dragon des éclairs", "Dragon de neige", "Dragon de gel",
             "Dragon de givre", "Dragon du reflet", "Dragon de terre", "Dragon de pluie", "Dragon de venin",
             "Dragon des icebergs", "Dragon d'uranium", "Dragon tropical", "Dragon des tempêtes",
-            "Dragon des fossiles", "Dragon de grêle", "Dragon de rubis", "Dragon d'emeraudes",
+            "Dragon de grêle", "Dragon de rubis", "Dragon d'emeraudes",
             "Dragon de saphir", "Dragon du blizzard", "Dragon souverain", "Dragon prismatique", "Dragon oublié"
         ]
     },
