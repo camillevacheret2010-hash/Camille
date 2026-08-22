@@ -3252,7 +3252,7 @@ async def hdv_buy(interaction: discord.Interaction, offer_id: str):
 
     # Retirer du HDV
     hdv_list.remove(offer)
-    clean_hybrids(user_data)
+    clean_hybrids(acheteur)
     save_data(data)
 
     await interaction.response.send_message(
