@@ -849,7 +849,7 @@ async def on_message(message):
     gain_total = gain_base * user_data["boost"]
     user_data["money"] += gain_total
     save_data(data)
-    await bot.process_commands(message)
+    
 
 # truc de copilot pour le fichier de bank ou economy
 
