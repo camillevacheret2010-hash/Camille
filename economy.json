@@ -1,19 +1,23 @@
 {
     "1119591730577162261": {
-        "money": 53005,
+        "money": 181090,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-08-22",
+        "last_daily": "2026-08-27",
         "inventory": [
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
             "🧭 Relique ancienne",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "<:fossile:1532657456092807319> Fossile de dragon",
+            "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787405894,
+        "last_fish": 1787835622,
         "fish_inventory": [],
         "dragons": {
             "Dragon détruit": [
@@ -60,9 +64,6 @@
             ],
             "Dragon fossilisé": [
                 6
-            ],
-            "Dragon d'argile": [
-                5
             ],
             "Dragon d'obsidienne": [
                 5
@@ -300,9 +301,12 @@
             ],
             "Dragon de chaleur": [
                 5
+            ],
+            "Dragon d'argile": [
+                6
             ]
         },
-        "tokens": 1,
+        "tokens": 6,
         "progress_quests": {
             "boost3": true,
             "forgeron4": true,
@@ -425,82 +429,87 @@
         }
     },
     "1191742658016718909": {
-        "money": 300465,
+        "money": 83535,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-08-22",
+        "last_daily": "2026-08-27",
         "inventory": [
             "🧭 Relique ancienne",
             "🧭 Relique ancienne",
-            "🐐 Chèvre",
+            "<:fossile:1532657456092807319> Fossile de dragon",
             "<:fossile:1532657456092807319> Fossile de dragon",
             "🐐 Chèvre",
             "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787399362,
+        "last_fish": 1787830194,
         "fish_inventory": [
+            "🐠 Saumon",
+            "<:carpe:1531391419854487712> Carpe",
             "🐟 Sardine"
         ],
         "dragons": {
-            "Dragon de feu": [
-                3
-            ],
-            "Dragon de glace": [
-                3
-            ],
-            "Dragon de poison": [
-                3
-            ],
-            "Dragon électrique": [
-                3
-            ],
-            "Dragon d'eau": [
-                3
-            ],
-            "Dragon de sable": [
-                3
-            ],
-            "Dragon des ombres": [
-                3
-            ],
-            "Dragon de vent": [
-                3
-            ],
-            "Dragon de pierre": [
-                3
-            ],
-            "Dragon d'argile": [
-                3
-            ],
-            "Dragon de cristal": [
-                3
-            ],
-            "Dragon de lave": [
-                3
-            ],
-            "Dragon spectral": [
-                3
-            ],
-            "Dragon d'orage": [
-                3
-            ],
-            "Dragon des cavernes": [
-                3
-            ],
-            "Dragon de poussière": [
-                3
-            ],
-            "Dragon des vagues": [
-                3
-            ],
-            "Dragon radioactif": [
-                3
-            ],
             "Dragon du soleil": [
                 3
             ],
@@ -516,9 +525,6 @@
             "Dragon des cieux": [
                 3
             ],
-            "Dragon de lumière": [
-                3
-            ],
             "Dragon possédé": [
                 3
             ],
@@ -529,9 +535,6 @@
                 3
             ],
             "Dragon de terreur": [
-                3
-            ],
-            "Dragon de terre": [
                 3
             ],
             "Dragon miroir": [
@@ -636,40 +639,10 @@
             "Dragon des étoiles": [
                 3
             ],
-            "Dragon des cendres": [
-                3
-            ],
-            "Dragon surchargé": [
-                3
-            ],
-            "Dragon de chaleur": [
-                3
-            ],
-            "Dragon de magnétite": [
-                3
-            ],
-            "Dragon de vapeur": [
-                3
-            ],
-            "Dragon des éclairs": [
-                3
-            ],
-            "Dragon de neige": [
-                3
-            ],
-            "Dragon de gel": [
-                3
-            ],
             "Dragon de givre": [
                 3
             ],
-            "Dragon du reflet": [
-                3
-            ],
             "Dragon de pluie": [
-                3
-            ],
-            "Dragon de venin": [
                 3
             ],
             "Dragon d'uranium": [
@@ -731,6 +704,96 @@
             ],
             "Dragon corrompu": [
                 6
+            ],
+            "Dragon de feu": [
+                6
+            ],
+            "Dragon de glace": [
+                6
+            ],
+            "Dragon de poison": [
+                6
+            ],
+            "Dragon électrique": [
+                6
+            ],
+            "Dragon d'eau": [
+                6
+            ],
+            "Dragon de sable": [
+                6
+            ],
+            "Dragon des ombres": [
+                6
+            ],
+            "Dragon de lumière": [
+                6
+            ],
+            "Dragon de pierre": [
+                6
+            ],
+            "Dragon de vent": [
+                6
+            ],
+            "Dragon d'argile": [
+                6
+            ],
+            "Dragon de cristal": [
+                6
+            ],
+            "Dragon de lave": [
+                6
+            ],
+            "Dragon spectral": [
+                6
+            ],
+            "Dragon d'orage": [
+                6
+            ],
+            "Dragon des cavernes": [
+                6
+            ],
+            "Dragon de poussière": [
+                6
+            ],
+            "Dragon des vagues": [
+                6
+            ],
+            "Dragon radioactif": [
+                6
+            ],
+            "Dragon des cendres": [
+                6
+            ],
+            "Dragon surchargé": [
+                6
+            ],
+            "Dragon de chaleur": [
+                6
+            ],
+            "Dragon de magnétite": [
+                6
+            ],
+            "Dragon de vapeur": [
+                6
+            ],
+            "Dragon des éclairs": [
+                6
+            ],
+            "Dragon de neige": [
+                6
+            ],
+            "Dragon de gel": [
+                6
+            ],
+            "Dragon du reflet": [
+                6
+            ],
+            "Dragon de terre": [
+                6
+            ],
+            "Dragon de venin": [
+                6
             ]
         },
         "tokens": 5,
@@ -743,7 +806,7 @@
         }
     },
     "1453643861883752523": {
-        "money": 109626,
+        "money": 114351,
         "boost": 3,
         "job_level": 6,
         "last_daily": "2026-08-16",
@@ -860,10 +923,10 @@
         }
     },
     "1295437098836295681": {
-        "money": 476651,
+        "money": 521011,
         "boost": 1,
         "job_level": 6,
-        "last_daily": "2026-08-21",
+        "last_daily": "2026-08-27",
         "inventory": [
             "<:oeuf_de_dragon_epique:1516064792400629802> Œuf de dragon épique",
             "🐐 Chèvre",
@@ -897,11 +960,15 @@
             "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787389837,
+        "last_fish": 1787827654,
         "fish_inventory": [
             "🐟 Sardine",
             "🦀 Crabe",
@@ -911,7 +978,15 @@
             "<:carpe:1531391419854487712> Carpe",
             "<:leviathan:1531391807861030914> Leviathan",
             "🐟 Sardine",
-            "<:leviathan:1531391807861030914> Leviathan"
+            "<:leviathan:1531391807861030914> Leviathan",
+            "<:carpe:1531391419854487712> Carpe",
+            "🐠 Saumon",
+            "🐠 Saumon",
+            "<:poissonclown:1531585948628946954> poisson clown",
+            "🐠 Saumon",
+            "🐟 Sardine",
+            "🐟 Sardine",
+            "<:carpe:1531391419854487712> Carpe"
         ],
         "dragons": {},
         "tokens": 11,
@@ -924,11 +999,14 @@
         }
     },
     "1159164756234621019": {
-        "money": 185990,
+        "money": 222710,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-08-22",
+        "last_daily": "2026-08-27",
         "inventory": [
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre",
@@ -944,8 +1022,11 @@
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787390748,
-        "fish_inventory": [],
+        "last_fish": 1787825051,
+        "fish_inventory": [
+            "<:poissonrouge:1531585970166566972> petit poisson rouge",
+            "🐟 Sardine"
+        ],
         "dragons": {
             "Dragon électrique": [
                 1
@@ -1045,33 +1126,28 @@
         }
     },
     "daily_quests": {
-        "date": "2026-08-21",
+        "date": "2026-08-27",
         "quests": [
             {
-                "id": 3,
-                "name": "Faire éclore un œuf commun",
+                "id": 17,
+                "name": "Remporter un drop",
+                "reward": 1
+            },
+            {
+                "id": 1,
+                "name": "Augmenter un dragon d'un stade",
                 "reward": 1
             },
             {
                 "id": 13,
                 "name": "Pêcher un crabe ou un poisson doré",
                 "reward": 1
-            },
-            {
-                "id": 5,
-                "name": "Faire éclore un œuf épique",
-                "reward": 2
             }
         ],
         "completed": {
-            "1191742658016718909": [
-                13
-            ],
-            "1168481636573257728": [
-                13
-            ],
-            "1119591730577162261": [
-                13
+            "1479480336944468061": [
+                13,
+                1
             ]
         }
     },
@@ -1114,7 +1190,7 @@
         "last_fish": 0,
         "fish_inventory": [],
         "dragons": {},
-        "tokens": 15,
+        "tokens": 17,
         "progress_quests": {
             "boost3": false,
             "forgeron4": false,
@@ -1144,10 +1220,10 @@
         }
     },
     "1479480336944468061": {
-        "money": 816556,
+        "money": 256936,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-08-21",
+        "last_daily": "2026-08-27",
         "inventory": [
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
@@ -1156,86 +1232,40 @@
             "🧭 Relique ancienne",
             "🧭 Relique ancienne",
             "🧭 Relique ancienne",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
             "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon",
-            "🐐 Chèvre",
-            "<:fossile:1532657456092807319> Fossile de dragon"
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
+            "<:noyau_de_puissance:1516065680166879342> Noyau de puissance"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787341903,
+        "last_fish": 1787836840,
         "fish_inventory": [
-            "🐟 Sardine",
-            "<:leviathan:1531391807861030914> Leviathan",
-            "🦀 Crabe",
-            "<:leviathan:1531391807861030914> Leviathan",
-            "<:poissonclown:1531585948628946954> poisson clown",
-            "🐟 Sardine",
             "<:poissonrouge:1531585970166566972> petit poisson rouge",
-            "🐠 Saumon",
-            "<:carpe:1531391419854487712> Carpe",
             "🐟 Sardine",
-            "<:carpe:1531391419854487712> Carpe",
-            "🐠 Saumon",
-            "<:carpe:1531391419854487712> Carpe",
-            "<:leviathan:1531391807861030914> Leviathan",
-            "<:poissonclown:1531585948628946954> poisson clown",
-            "<:poissonrouge:1531585970166566972> petit poisson rouge",
-            "<:carpe:1531391419854487712> Carpe",
             "🐟 Sardine",
-            "🐠 Saumon",
-            "<:poissonclown:1531585948628946954> poisson clown",
+            "🐟 Sardine",
+            "🐟 Sardine",
             "🐟 Sardine"
         ],
         "dragons": {
             "Dragon de feu": [
                 1,
-                1
+                6
             ],
             "Dragon de poison": [
                 1,
-                1
+                6
             ],
             "Dragon de vent": [
                 1,
-                1
+                6
             ],
             "Dragon de sang": [
                 1,
-                1
-            ],
-            "Grand Dragon Doré": [
                 6
             ],
             "Dragon chromatique": [
@@ -1250,6 +1280,8 @@
                 6
             ],
             "Dragon raté": [
+                1,
+                1,
                 1
             ],
             "Dragon du printemps": [
@@ -1257,76 +1289,43 @@
             ],
             "Dragon de pierre": [
                 1,
-                1
+                6
             ],
             "Dragon de lumière": [
                 1,
-                1
+                6
             ],
             "Dragon de glace": [
                 1,
-                1
+                6
             ],
             "Dragon des ombres": [
                 1,
-                1
+                6
             ],
             "Dragon électrique": [
                 1,
-                1
+                6
             ],
             "Dragon corrompu": [
                 1,
-                1
+                6
             ],
             "Dragon du soleil": [
                 1,
-                1
+                6
             ],
             "Dragon ancestral": [
                 6
             ],
-            "Dragon de poussière": [
-                1
-            ],
-            "Dragon d'orage": [
-                1
-            ],
-            "Dragon possédé": [
-                1
-            ],
-            "Dragon d'obsidienne": [
-                1
-            ],
-            "Dragon de rouille": [
-                1
-            ],
             "Dragon compacté": [
                 6
-            ],
-            "Dragon pissenlit": [
-                1
             ],
             "Dragon d'améthyste": [
                 6
             ],
-            "Dragon de pouvoir": [
-                1
-            ],
-            "Dragon de plante": [
-                1
-            ],
-            "Dragon de terreur": [
-                1
-            ],
             "Dragon des abysses": [
                 6
-            ],
-            "Dragon arc-en-ciel": [
-                6
-            ],
-            "Dragon d'argile": [
-                1
             ],
             "Dragon de l'aube": [
                 6
@@ -1339,9 +1338,6 @@
             ],
             "Dragon caméléon": [
                 6
-            ],
-            "Dragon des cavernes": [
-                1
             ],
             "Dragon champignon": [
                 6
@@ -1356,9 +1352,6 @@
                 6
             ],
             "Dragon diabolique": [
-                6
-            ],
-            "Dragon de diamant": [
                 6
             ],
             "Dragon éclipse": [
@@ -1385,95 +1378,167 @@
             "Dragon musical": [
                 6
             ],
+            "Grand Dragon Doré": [
+                6
+            ],
+            "Dragon arc-en-ciel": [
+                6
+            ],
+            "Dragon d'argile": [
+                6
+            ],
+            "Dragon du blizzard": [
+                6
+            ],
+            "Dragon des cavernes": [
+                6
+            ],
+            "Dragon des cauchemars": [
+                6
+            ],
+            "Dragon des cendres": [
+                6
+            ],
+            "Dragon de chaleur": [
+                6
+            ],
+            "Dragon des cieux": [
+                6
+            ],
+            "Dragon de cristal": [
+                6
+            ],
+            "Dragon de diamant": [
+                6
+            ],
+            "Dragon d'eau": [
+                6
+            ],
+            "Dragon des éclairs": [
+                6
+            ],
+            "Dragon d'emeraudes": [
+                6
+            ],
+            "Dragon fossilisé": [
+                6
+            ],
+            "Dragon de gel": [
+                6
+            ],
+            "Dragon de givre": [
+                6
+            ],
+            "Dragon de grêle": [
+                6
+            ],
+            "Dragon des icebergs": [
+                6
+            ],
+            "Dragon de lave": [
+                6
+            ],
+            "Dragon de magnétite": [
+                6
+            ],
+            "Dragon miroir": [
+                6
+            ],
+            "Dragon des nuages": [
+                6
+            ],
             "Dragon de la nuit": [
                 6
             ],
+            "Dragon d'obsidienne": [
+                6
+            ],
+            "Dragon d'orage": [
+                6
+            ],
             "Dragon oublié": [
-                1
+                6
             ],
-            "Dragon de sable": [
-                1
+            "Dragon pissenlit": [
+                6
             ],
-            "Dragon des cendres": [
-                1
-            ],
-            "Dragon surchargé": [
-                1
-            ],
-            "Dragon de magnétite": [
-                1
-            ],
-            "Dragon des éclairs": [
-                1
+            "Dragon de plante": [
+                6
             ],
             "Dragon de neige": [
-                1
-            ],
-            "Dragon de terre": [
-                1
-            ],
-            "Dragon de venin": [
-                1
-            ],
-            "Dragon fossilisé": [
-                1
-            ],
-            "Dragon de vapeur": [
-                1
-            ],
-            "Dragon des cieux": [
-                1
-            ],
-            "Dragon du reflet": [
-                1
-            ],
-            "Dragon miroir": [
-                1
-            ],
-            "Dragon spectral": [
-                1
-            ],
-            "Dragon de lave": [
-                1
-            ],
-            "Dragon de cristal": [
-                1
-            ],
-            "Dragon de gel": [
-                1
-            ],
-            "Dragon de givre": [
-                1
-            ],
-            "Dragon des nuages": [
-                1
+                6
             ],
             "Dragon de pluie": [
-                1
+                6
             ],
-            "Dragon des vagues": [
-                1
+            "Dragon possédé": [
+                6
             ],
-            "Dragon des icebergs": [
-                1
+            "Dragon de pouvoir": [
+                6
+            ],
+            "Dragon prismatique": [
+                6
             ],
             "Dragon radioactif": [
-                1
+                6
+            ],
+            "Dragon de sable": [
+                6
+            ],
+            "Dragon spectral": [
+                6
+            ],
+            "Dragon de poussière": [
+                6
+            ],
+            "Dragon des vagues": [
+                6
+            ],
+            "Dragon de terreur": [
+                6
+            ],
+            "Dragon de rouille": [
+                6
+            ],
+            "Dragon des rêves": [
+                6
+            ],
+            "Dragon surchargé": [
+                6
+            ],
+            "Dragon de vapeur": [
+                6
+            ],
+            "Dragon du reflet": [
+                6
+            ],
+            "Dragon de terre": [
+                6
+            ],
+            "Dragon de venin": [
+                6
             ],
             "Dragon d'uranium": [
-                1
-            ],
-            "Dragon de chaleur": [
-                1
-            ],
-            "Dragon d'eau": [
-                1
+                6
             ],
             "Dragon tropical": [
-                1
+                6
+            ],
+            "Dragon des tempêtes": [
+                6
+            ],
+            "Dragon de rubis": [
+                6
+            ],
+            "Dragon de saphir": [
+                6
+            ],
+            "Dragon souverain": [
+                6
             ]
         },
-        "tokens": 21,
+        "tokens": 5,
         "progress_quests": {
             "boost3": true,
             "forgeron4": true,
@@ -1483,16 +1548,16 @@
         }
     },
     "1379904903639601225": {
-        "money": 7955,
+        "money": 17375,
         "boost": 1,
         "job_level": 0,
-        "last_daily": "2026-08-14",
+        "last_daily": "2026-08-26",
         "inventory": [
             "<:fossile:1532657456092807319> Fossile de dragon"
         ],
         "farm": false,
         "fishing_rod": 1,
-        "last_fish": 1786742563,
+        "last_fish": 1787751536,
         "fish_inventory": [],
         "dragons": {
             "Dragon de la lune": [
@@ -1512,7 +1577,7 @@
                 1
             ]
         },
-        "tokens": 0,
+        "tokens": 1,
         "progress_quests": {
             "boost3": false,
             "forgeron4": false,
@@ -1583,7 +1648,7 @@
         }
     ],
     "1434185734205603911": {
-        "money": 765,
+        "money": 1980,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
@@ -1820,10 +1885,10 @@
         }
     },
     "1168481636573257728": {
-        "money": 429007,
+        "money": 462052,
         "boost": 1,
         "job_level": 6,
-        "last_daily": "2026-08-22",
+        "last_daily": "2026-08-26",
         "inventory": [
             "<:soupe_aux_epices:1515710241667285073> Soupe aux épices",
             "<:soupe_aux_epices:1515710241667285073> Soupe aux épices",
@@ -1842,11 +1907,14 @@
             "<:fossile:1532657456092807319> Fossile de dragon",
             "🐐 Chèvre",
             "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
+            "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787396425,
+        "last_fish": 1787767297,
         "fish_inventory": [
             "<:leviathan:1531391807861030914> Leviathan",
             "🐟 Sardine",
@@ -1870,7 +1938,13 @@
             "<:poissonclown:1531585948628946954> poisson clown",
             "<:carpe:1531391419854487712> Carpe",
             "🦀 Crabe",
-            "🐠 Saumon"
+            "🐠 Saumon",
+            "🐟 Sardine",
+            "🐟 Sardine",
+            "🐠 Saumon",
+            "🐟 Sardine",
+            "🐟 Sardine",
+            "🐟 Sardine"
         ],
         "dragons": {
             "Dragon de glace": [
@@ -1952,10 +2026,10 @@
         }
     },
     "879311709259571232": {
-        "money": 52985,
+        "money": 7390,
         "boost": 1,
         "job_level": 1,
-        "last_daily": "2026-08-15",
+        "last_daily": "2026-08-24",
         "inventory": [
             "<:fossile:1532657456092807319> Fossile de dragon",
             "🧭 Relique ancienne",
@@ -1963,8 +2037,8 @@
             "<:fossile:1532657456092807319> Fossile de dragon"
         ],
         "farm": false,
-        "fishing_rod": 1,
-        "last_fish": 1787102710,
+        "fishing_rod": 2,
+        "last_fish": 1787665022,
         "fish_inventory": [],
         "dragons": {
             "Dragon corrompu": [
@@ -2010,7 +2084,7 @@
         }
     },
     "1323435959496474624": {
-        "money": 90920,
+        "money": 91775,
         "boost": 1,
         "job_level": 0,
         "last_daily": "2026-07-22",
@@ -2190,10 +2264,10 @@
         }
     },
     "1524347222920007720": {
-        "money": 150795,
+        "money": 162545,
         "boost": 3,
         "job_level": 6,
-        "last_daily": "2026-08-20",
+        "last_daily": "2026-08-24",
         "inventory": [
             "<:noyau_de_puissance:1516065680166879342> Noyau de puissance",
             "🐐 Chèvre",
@@ -2213,11 +2287,12 @@
             "🐐 Chèvre",
             "🐐 Chèvre",
             "🐐 Chèvre",
+            "🐐 Chèvre",
             "🐐 Chèvre"
         ],
         "farm": true,
         "fishing_rod": 3,
-        "last_fish": 1787325445,
+        "last_fish": 1787589725,
         "fish_inventory": [],
         "dragons": {
             "Dragon de la lune": [
@@ -2492,6 +2567,26 @@
     },
     "1231327096052383948": {
         "money": 210,
+        "boost": 1,
+        "job_level": 0,
+        "last_daily": "",
+        "inventory": [],
+        "farm": false,
+        "fishing_rod": 1,
+        "last_fish": 0,
+        "fish_inventory": [],
+        "dragons": {},
+        "tokens": 0,
+        "progress_quests": {
+            "boost3": false,
+            "forgeron4": false,
+            "ferme": false,
+            "fish10000": false,
+            "canne_max": false
+        }
+    },
+    "1457379402395422753": {
+        "money": 90,
         "boost": 1,
         "job_level": 0,
         "last_daily": "",
