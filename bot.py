@@ -2750,18 +2750,21 @@ async def nourrir(interaction: discord.Interaction, dragon: str):
 def has_item(user_data, item_name, qty_needed=1):
     inv = user_data.get("inventory", [])
 
+    count = 0
+
     for entry in inv:
         if isinstance(entry, str):
-            if entry == item_name and qty_needed == 1:
-                return True
+            if entry == item_name:
+                count += 1
 
         elif isinstance(entry, (list, tuple)):
-            if len(entry) >= 2:
-                if entry[0] == item_name and entry[1] >= qty_needed:
-                    return True
-            elif len(entry) == 1:
-                if entry[0] == item_name and qty_needed == 1:
-                    return True
+            if len(entry) >= 2 and entry[0] == item_name:
+                count += entry[1]
+            elif len(entry) == 1 and entry[0] == item_name:
+                count += 1
+
+        if count >= qty_needed:
+            return True
 
     return False
 
@@ -2769,24 +2772,30 @@ def has_item(user_data, item_name, qty_needed=1):
 def remove_item(user_data, item_name, qty=1):
     inv = user_data.get("inventory", [])
 
-    for i, entry in enumerate(inv):
+    removed = 0
+    new_inv = []
 
-        if isinstance(entry, str):
-            if entry == item_name and qty == 1:
-                inv.pop(i)
-                return
+    for entry in inv:
+        if removed >= qty:
+            new_inv.append(entry)
+            continue
 
-        elif isinstance(entry, (list, tuple)):
-            if len(entry) >= 2 and entry[0] == item_name:
-                if entry[1] > qty:
-                    inv[i][1] -= qty
-                else:
-                    inv.pop(i)
-                return
+        if isinstance(entry, str) and entry == item_name:
+            removed += 1
+            continue
 
-            elif len(entry) == 1 and entry[0] == item_name and qty == 1:
-                inv.pop(i)
-                return
+        if isinstance(entry, (list, tuple)) and entry[0] == item_name:
+            if len(entry) >= 2:
+                take = min(entry[1], qty - removed)
+                entry[1] -= take
+                removed += take
+                if entry[1] > 0:
+                    new_inv.append(entry)
+                continue
+
+        new_inv.append(entry)
+
+    user_data["inventory"] = new_inv
 
 
 def has_required_parents(user_data, dragon_name):
